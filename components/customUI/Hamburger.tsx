@@ -59,6 +59,7 @@ const Hamburger = () => {
             ))}
 
           <Button
+          type="button"
             variant="primary"
             size="lg"
             onClick={() => setMenuOpen(false)}

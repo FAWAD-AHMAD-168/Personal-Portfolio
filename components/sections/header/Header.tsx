@@ -9,7 +9,7 @@ import Hamburger from "@/components/customUI/Hamburger";
 const Header = () => {
   return (
     
-      <header className="fixed z-1000  h-25 w-full  text-white px-2 flex justify-around items-center xl:gap-37.5  lg-gap-30 md:gap-15  ">
+      <header className="fixed z-1000 text-(--text-primary-color) h-20 w-full px-2 flex justify-around items-center xl:gap-37.5  lg-gap-30 md:gap-15  ">
         {/* Profile Section */}
 
           <Link href="/" className="flex gap-2 items-center">

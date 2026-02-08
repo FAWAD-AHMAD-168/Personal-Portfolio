@@ -1,9 +1,18 @@
-import React from 'react'
+import HomeLeft from "@/components/sections/home/HomeLeft";
+import HomeRight from "@/components/sections/home/HomeRight";
 
 const page = () => {
   return (
-    <div className='text-white h-screen w-full flex justify-center items-center z-50'>Home</div>
-  )
-}
 
-export default page
+<section className="absolute top-25  flex  justify-center items-center w-full"> 
+    <div className=" flex  flex-col-reverse justify-center items-center     lg:flex lg:flex-row  lg:justify-center lg:items-center ">
+      
+      <HomeLeft />
+      <HomeRight />
+    </div>
+    </section>
+  );
+
+};
+
+export default page;
