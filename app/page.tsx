@@ -1,13 +1,23 @@
-import Button from '@/components/customUI/Button';
+import Header from "@/components/sections/header/Header";
+
+import Home from "./home/page";
+import About from "./about/page";
+import Projects from "./projects/page";
+import Contact from "./contact/page";
+import Skills from "./skills/page";
+import Experience from "./experience/page";
+
 const page = () => {
   return (
-    <div>
+    <>
+      <Home />
+      <About />
+      <Skills />
+      <Experience />
+      <Projects />
+      <Contact />
+    </>
+  );
+};
 
-      <Button type="button" variant="secondary" size="lg" rightIcon="/linkedin.svg" className=' flex justify-center items-center gap-2'>LinkedIn</Button>
-      <Button type="button" variant="primary" size="lg" rightIcon="/github.svg" className='flex justify-center items-center gap-2'>Github</Button>
-
-    </div>
-  )
-}
-
-export default page
+export default page;
