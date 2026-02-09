@@ -12,14 +12,14 @@ const HomeRight = () => {
         <Image
           src="/home/profile pic.svg"
           alt="profile"
-          width={400}
-          height={400}
+          width={370}
+          height={370}
           loading="lazy"
           className="rounded-full"
         />
       </motion.div>
 
-      <div className=" hidden  absolute top-117  right-30 text-(--text-primary-color) text-[20px] w-100 h-20 rounded-sm border font-semibold border-(--text-primary-color) xl:flex justify-center items-center gap-2">
+      <div className=" hidden  absolute top-113  right-30  text-(--text-primary-color) text-[20px] w-100 h-20 rounded-sm border font-semibold border-(--text-primary-color) xl:flex justify-center items-center gap-2">
         <Image
           src="/home/work.svg"
           alt="work"

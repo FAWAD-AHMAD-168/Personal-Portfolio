@@ -8,9 +8,11 @@ import Hamburger from "@/components/customUI/Hamburger";
 
 const Header = () => {
   return (
-    
-      <header className="fixed z-1000 text-(--text-primary-color) h-20 w-full px-2 flex justify-around items-center xl:gap-37.5  lg-gap-30 md:gap-15  ">
+     
+      <header className="fixed z-1000 text-(--text-primary-color) h-23 w-full   flex justify-center items-center gap-20 sm:gap-22 md:gap-20 lg:gap-26  xl-gap-30   ">
         {/* Profile Section */}
+
+        <div>
 
           <Link href="/" className="flex gap-2 items-center">
           <Image
@@ -20,24 +22,33 @@ const Header = () => {
             width={120}
             height={120}
             className="
-    h-12 w-12
+    h-10 w-10
     sm:h-13 sm:w-13
     md:h-14 md:w-14
-    lg:h-15 lg:w-15
-    xl:h-18 xl:w-18
-    2xl:h-20 2xl:w-20
+    lg:h-16 lg:w-16
+    
+    
+   
+    
     rounded-full
     shadow-(--primary-color) 
   "
           />
 
-          <h1 className="text-[18px] sm:text-[15px] md:text-[12px] lg:text-[18px] xl:text-[22px] 2xl:text-[24px] text-(--text-primary-color) font-semibold">
+          <h1 className="block sm:block md:hidden lg:block xl:block   text-[16px] sm:text-[16px] md:text-[16px] lg:text-[18px] xl:text-[24px] text-(--text-primary-color) font-semibold">
             Fawad{" "}
-            <span className="ml bg-(--primary-color) bg-clip-text text-transparent">
+            <span className=" bg-(--primary-color) bg-clip-text text-transparent">
               Ahmad
             </span>
           </h1>
+
+          <h1 className="hidden sm:hidden md:block lg:hidden xl:hidden ">
+             <span className="font-semibold bg-(--primary-color) bg-clip-text text-transparent">
+              Fawad.
+            </span>
+          </h1>
           </Link>
+          </div>
         
 
         {/* Nav Menu */}
@@ -62,7 +73,7 @@ const Header = () => {
             type="button"
             className="
     h-[50px] w-[50px] text-[12px] font-semibold rounded-sm
-    md:h-[50px] md:w-[110px] md:text-[13px]
+    md:h-[45px] md:w-[120px] md:text-[12px]
     xl:h-[50px] xl:w-[160px] xl:text-[16px]
   "
           >
