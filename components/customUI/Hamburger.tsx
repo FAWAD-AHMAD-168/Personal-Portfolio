@@ -10,6 +10,14 @@ import navLinks from "@/constants/navLinks";
 const Hamburger = () => {
   const [menuopen, setMenuOpen] = useState(false);
 
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", `#${id}`);
+    }
+  };
+
   return (
     <div className="relative">
       {/* Hamburger Button */}
@@ -21,17 +29,12 @@ const Hamburger = () => {
         onClick={() => setMenuOpen(!menuopen)}
       >
         <Image
-          src={
-            menuopen
-              ? "/header/cancel.svg"
-              : "/header/hamburger.svg"
-          }
+          src={menuopen ? "/header/cancel.svg" : "/header/hamburger.svg"}
           alt="Menu"
           width={24}
           height={24}
         />
       </Button>
-
 
       {/* Menu Overlay */}
       {menuopen && (
@@ -50,21 +53,33 @@ const Hamburger = () => {
             z-50
           "
         >
-            {/* Menu Links */}
-
+          {/* Menu Links */}
+          <ul className="flex flex-col gap-6 text-[20px] text-center">
             {navLinks.map((link) => (
-                <Link key={link.name} href={link.href} onClick={() => setMenuOpen(false)}>
-                    {link.name}
-                </Link>
+              <li key={link.name}>
+                <button
+                  type="button"
+                  onClick={() => {
+                    scrollToSection(link.href);
+                    setMenuOpen(false);
+                  }}
+                  className="text-(--text-primary-color) hover:text-(--primary-color) transition-all duration-300 font-medium"
+                >
+                  {link.name}
+                </button>
+              </li>
             ))}
+          </ul>
 
           <Button
-          type="button"
+            type="button"
             variant="primary"
             size="lg"
             onClick={() => setMenuOpen(false)}
           >
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">Check Resume</Link>
+            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+              Check Resume
+            </Link>
           </Button>
         </motion.div>
       )}

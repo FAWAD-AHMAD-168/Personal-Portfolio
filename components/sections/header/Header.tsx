@@ -7,14 +7,20 @@ import Button from "@/components/customUI/Button";
 import Hamburger from "@/components/customUI/Hamburger";
 
 const Header = () => {
+  const scrollToSection = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      window.history.pushState(null, "", `#${id}`);
+    }
+  };
+
   return (
-     
-      <header className="fixed z-1000 text-(--text-primary-color) h-23 w-full   flex justify-center items-center gap-20 sm:gap-22 md:gap-20 lg:gap-26  xl-gap-30   ">
-        {/* Profile Section */}
+    <header className="fixed top-0 z-1000 text-(--text-primary-color) h-23 w-full   flex justify-center items-center gap-20 sm:gap-22 md:gap-20 lg:gap-26  xl-gap-30   ">
+      {/* Profile Section */}
 
-        <div>
-
-          <Link href="/" className="flex gap-2 items-center">
+      <div>
+        <Link href="/" className="flex gap-2 items-center">
           <Image
             alt="profile"
             src="/header/profile.png"
@@ -43,55 +49,52 @@ const Header = () => {
           </h1>
 
           <h1 className="hidden sm:hidden md:block lg:hidden xl:hidden ">
-             <span className="font-semibold bg-(--primary-color) bg-clip-text text-transparent">
+            <span className="font-semibold bg-(--primary-color) bg-clip-text text-transparent">
               Fawad.
             </span>
           </h1>
-          </Link>
-          </div>
-        
+        </Link>
+      </div>
 
-        {/* Nav Menu */}
+      {/* Nav Menu */}
 
-        <nav className=" hidden sm:hidden md:flex lg:flex xl:flex 2xl:flex gap-7.5  ">
-          {navLinks.map((link) => (
-            <li
-              key={link.name}
-              className=" md:text-[12px] lg:text-[16px] font-medium text-(--text-primary-color) list-none cursor-pointer hover:text-(--primary-color) transition-all duration-300"
-            >
-              <Link href={link.href}>{link.name}</Link>
-            </li>
-          ))}
-        </nav>
+      <nav className="hidden md:flex gap-6">
+        {navLinks.map((link) => (
+          <li
+            key={link.name}
+            className="list-none cursor-pointer font-medium text-(--text-primary-color) hover:text-(--primary-color) transition-all duration-300"
+            onClick={() => scrollToSection(link.href)}
+          >
+            {link.name}
+          </li>
+        ))}
+      </nav>
 
-        {/* Resume Button */}
+      {/* Resume Button */}
 
-        <div className="hidden   md:block ">
-          <Button
-            variant="primary"
-            size="lg"
-            type="button"
-            className="
+      <div className="hidden   md:block ">
+        <Button
+          variant="primary"
+          size="lg"
+          type="button"
+          className="
     h-[50px] w-[50px] text-[12px] font-semibold rounded-sm
     md:h-[45px] md:w-[120px] md:text-[12px]
     xl:h-[50px] xl:w-[160px] xl:text-[16px]
   "
-          >
-            <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+        >
+          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             Check Resume
-            </Link>
-          </Button>
-        </div>
+          </Link>
+        </Button>
+      </div>
 
-        <div className="block md:hidden">
-          <Hamburger />
-          </div>
+      <div className="block md:hidden">
+        <Hamburger />
+      </div>
 
-          
-
-        {/* Hamburger Menu */}
-      </header>
-    
+      {/* Hamburger Menu */}
+    </header>
   );
 };
 

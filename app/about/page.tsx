@@ -1,8 +1,59 @@
+import SectionHeading from "@/components/customUI/SectionHeading";
+import AboutLeft from "@/components/sections/about/AboutLeft";
+import AboutRIght from "@/components/sections/about/AboutRIght";
+import Services from "@/components/sections/about/Services";
+
+import type { Metadata } from "next";
+
+export const metadata:Metadata = {
+  title: "About Me | MERN Stack Developer – Fawad Ahmad",
+  description:
+    "Learn more about Fawad Ahmad, a MERN Stack Developer pursuing Computer Science at the University of Gujrat, skilled in HTML, CSS, Tailwind CSS, JavaScript, React, and Node.js.",
+  keywords: [
+    "Fawad Ahmad",
+    "MERN Stack Developer",
+    "Web Developer",
+    "HTML",
+    "CSS",
+    "Tailwind CSS",
+    "JavaScript",
+    "React",
+    "Node.js",
+    "Computer Science Student",
+    "University of Gujrat",
+    "Portfolio",
+  ],
+  authors: [{ name: "Fawad Ahmad" }],
+  openGraph: {
+    title: "About Me | Fawad Ahmad – MERN Stack Developer",
+    description:
+      "About Fawad Ahmad, a Computer Science undergraduate and MERN Stack Developer specializing in modern web development.",
+    type: "website",
+  },
+};
+
+
 const About = () => {
   return (
-    <div className="text-white flex justify-center items-center h-screen w-full">
-      About Section
-    </div>
+    <section
+      id="about"
+      className="absolute top-250  left-1/2 -translate-x-1/2   h-200 w-[90%] text-white flex flex-col  items-center gap-15
+    "
+    >
+      <div className="flex justify-center">
+        <SectionHeading>
+          <h1>About Me</h1>
+        </SectionHeading>
+      </div>
+      <div className="  flex flex-col justify-center items-center gap-10 md:flex-row md:gap-20">
+        <AboutLeft />
+        <AboutRIght />
+      </div>
+
+      <div>
+        <Services />
+      </div>
+    </section>
   );
-}
-export default About
+};
+export default About;
