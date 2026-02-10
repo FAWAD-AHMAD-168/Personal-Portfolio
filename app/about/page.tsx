@@ -37,7 +37,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="absolute top-250  left-1/2 -translate-x-1/2   h-200 w-[90%] text-white flex flex-col  items-center gap-15
+      className="  mx-auto   w-[90%] text-white flex flex-col  items-center gap-15
     "
     >
       <div className="flex justify-center">

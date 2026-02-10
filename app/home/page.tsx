@@ -32,7 +32,7 @@ export const metadata:Metadata = {
 const page = () => {
   return (
 
-<section id="home" className="absolute top-22  flex  justify-center items-center w-full "> 
+<section id="home" className="mx-auto  flex  justify-center items-center w-full "> 
     <div className=" flex  flex-col-reverse justify-center items-center     lg:flex lg:flex-row  lg:justify-center lg:items-center ">
       
       <HomeLeft />

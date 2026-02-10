@@ -24,7 +24,7 @@ const services: Service[] = [
         id:3,
         logo: "/services/maintenance.svg",
         title: "Maintenance",
-        description: "Designing intuitive interfaces and engaging user experiences for digital products."       
+        description: "I can maintain and update your website, fix issues, and ensure everything runs smoothly as your business and requirements grow."       
     }
 
 ]

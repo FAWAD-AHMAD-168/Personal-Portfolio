@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 z-1000 text-(--text-primary-color) h-23 w-full   flex justify-center items-center gap-20 sm:gap-22 md:gap-20 lg:gap-26  xl-gap-30   ">
+    <header className="fixed top-0 z-1000 text-(--text-primary-color) bg-(--bg-primary-color) h-23 w-full   flex justify-center items-center gap-20 sm:gap-22 md:gap-20 lg:gap-26  xl-gap-30   ">
       {/* Profile Section */}
 
       <div>

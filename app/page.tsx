@@ -1,16 +1,18 @@
-
 import Home from "./home/page";
 import About from "./about/page";
 // import Projects from "./projects/page";
 // import Contact from "./contact/page";
-// import Skills from "./skills/page";
+import Skills from "./skills/page";
 // import Experience from "./experience/page";
 
 const page = () => {
   return (
     <>
-      <Home />
-      <About />
+      <main className="flex flex-col gap-20">
+        <Home />
+        <About />
+        <Skills />
+      </main>
     </>
   );
 };

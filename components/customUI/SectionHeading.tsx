@@ -3,7 +3,7 @@ interface SectionHeadingProps {
 }
 const SectionHeading = ({ children }: SectionHeadingProps) => {
   return (
-    <div className=" h-20 w-70  border-b-4 border-(--primary-color)
+    <div className=" h-20 w-70   border-b-4 border-(--primary-color)
      flex justify-center items-center text-(--text-primary-color) text-3xl font-bold">{children}</div>
   )
 }
