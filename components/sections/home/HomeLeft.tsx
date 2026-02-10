@@ -5,7 +5,7 @@ import {motion} from 'framer-motion'
  
 const HomeLeft = () => {
   return (
-    <section className="  w-[70%]   h-95 lg:h-130  flex flex-col justify-center   gap-6">
+    <section className="  w-[85%]  lg:w-[50%]   h-95 lg:h-130  flex flex-col justify-center    gap-6 ">
       <motion.div
       initial={{x:-30,opacity:0}}
       animate={{x:0,opacity:1}}
@@ -21,7 +21,7 @@ const HomeLeft = () => {
       initial={{x:-30,opacity:0}}
       animate={{x:0,opacity:1}}
       transition={{duration:0.5,delay:0.2}}
-       className="text-[18px] text-(--text-secondary-color)">
+       className="text-[16px] text-(--text-secondary-color) w-[86%]">
         Building modern, responsive, and user-focused web applications.
       </motion.p>
           {/* Github and LinkedIn Buttons */}
@@ -35,6 +35,7 @@ const HomeLeft = () => {
           variant="primary"
           size="lg"
           rightIcon="/home/github.svg"
+          onClick={()=>{window.open("https://github.com/FAWAD-AHMAD-168", "_blank")}}
         >
           <Link href="https://github.com/FAWAD-AHMAD-168">Github</Link>
         </Button>
@@ -43,9 +44,10 @@ const HomeLeft = () => {
           variant="secondary"
           size="lg"
           rightIcon="/home/linkedin.svg"
+          onClick={()=>{window.open("https://www.linkedin.com/in/fawad-ahmad-b9a286319", "_blank")}}
         >
           <Link href="https://www.linkedin.com/in/fawad-ahmad-b9a286319">
-            LinkedIn
+            Linkedin
           </Link>
         </Button>
       </motion.div>

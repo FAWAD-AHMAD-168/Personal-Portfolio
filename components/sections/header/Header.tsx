@@ -16,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className="fixed top-0 z-1000 text-(--text-primary-color) bg-(--bg-primary-color) h-23 w-full   flex justify-center items-center gap-20 sm:gap-22 md:gap-20 lg:gap-26  xl-gap-30   ">
+    <header className="  z-1000 text-(--text-primary-color) bg-(--bg-primary-color) h-23 w-full mx-auto flex  items-center justify-center         sm:gap-32 md:gap-16 lg:gap-26  xl-gap-30   ">
       {/* Profile Section */}
 
       <div>
@@ -32,10 +32,6 @@ const Header = () => {
     sm:h-13 sm:w-13
     md:h-14 md:w-14
     lg:h-16 lg:w-16
-    
-    
-   
-    
     rounded-full
     shadow-(--primary-color) 
   "
@@ -72,17 +68,29 @@ const Header = () => {
 
       {/* Resume Button */}
 
-      <div className="hidden   md:block ">
-        <Button
-          variant="primary"
-          size="lg"
-          type="button"
-          className="
-    h-[50px] w-[50px] text-[12px] font-semibold rounded-sm
-    md:h-[45px] md:w-[120px] md:text-[12px]
-    xl:h-[50px] xl:w-[160px] xl:text-[16px]
-  "
-        >
+      
+
+      {/* Medium screens  */}
+      <div className="hidden md:block lg:hidden">
+        <Button variant="primary" size="sm" type="button">
+          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            Check Resume
+          </Link>
+        </Button>
+      </div>
+
+      {/* Large screens  */}
+      <div className="hidden lg:block xl:hidden">
+        <Button variant="primary" size="md" type="button">
+          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+            Check Resume
+          </Link>
+        </Button>
+      </div>
+
+      {/* Extra large  */}
+      <div className="hidden xl:block">
+        <Button variant="primary" size="lg" type="button">
           <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
             Check Resume
           </Link>
