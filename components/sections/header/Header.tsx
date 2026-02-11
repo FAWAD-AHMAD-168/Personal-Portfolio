@@ -16,7 +16,9 @@ const Header = () => {
   };
 
   return (
-    <header className="  z-1000 text-(--text-primary-color) bg-(--bg-primary-color) h-23 w-full mx-auto flex  items-center justify-center         sm:gap-32 md:gap-16 lg:gap-26  xl-gap-30   ">
+    <header className="  z-1000 text-(--text-primary-color) bg-(--bg-primary-color) 
+    h-23 w-full mx-auto flex  items-center justify-center      
+       sm:gap-32 md:gap-16 lg:gap-26  xl-gap-30   ">
       {/* Profile Section */}
 
       <div>
@@ -72,28 +74,24 @@ const Header = () => {
 
       {/* Medium screens  */}
       <div className="hidden md:block lg:hidden">
-        <Button variant="primary" size="sm" type="button">
-          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+        <Button variant="primary" size="sm" type="button" onClick={() => window.open("/resume.pdf", "_blank")}>
+          
             Check Resume
-          </Link>
+         
         </Button>
       </div>
 
       {/* Large screens  */}
       <div className="hidden lg:block xl:hidden">
-        <Button variant="primary" size="md" type="button">
-          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-            Check Resume
-          </Link>
+        <Button variant="primary" size="md" type="button" onClick={() => window.open("/resume.pdf", "_blank")}>
+          Check Resume
         </Button>
       </div>
 
       {/* Extra large  */}
       <div className="hidden xl:block">
-        <Button variant="primary" size="lg" type="button">
-          <Link href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-            Check Resume
-          </Link>
+        <Button variant="primary" size="lg" type="button"   onClick={() => window.open("/resume.pdf", "_blank")}>
+          Check Resume
         </Button>
       </div>
 

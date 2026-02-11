@@ -11,8 +11,8 @@ const page = () => {
   return (
     <>
       <main className="flex flex-col gap-20">
-        {/* <Home />
-        <About /> */}
+        <Home />
+        <About />
         <Skills />
       </main>
 
