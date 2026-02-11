@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 
-const AboutRIght = () => {
+const AboutRight = () => {
   return (
     <section className=" w-70 sm:w-100 flex flex-col  gap-10 ">
       <div>
@@ -47,4 +47,4 @@ const AboutRIght = () => {
   );
 };
 
-export default AboutRIght;
+export default AboutRight;

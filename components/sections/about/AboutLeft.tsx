@@ -1,23 +1,26 @@
 "use client";
-import Image from "next/image";
-import { motion } from "framer-motion";
+import Coder from "@/public/lottie/coder.json";
+import LottieAnimation from "@/components/lottiefiles/LottieAnimation";
+import {motion} from "framer-motion";
 const AboutLeft = () => {
   return (
-    <motion.section
-      initial={{ opacity: 0 , x: -50 }}
+    
+      <motion.div 
+      initial={{ opacity: 0, x: -50 }}
       whileInView={{ opacity: 1, x: 0 }}
-      transition={{ duration: 0.5}}
-      viewport={{ once: true ,amount: 0.3 }}
-      className="flex justify-center items-center"
-    >
-      <Image
-        src="/about/about.svg"
-        alt="About Me"
-        width={300}
-        height={400}
-        className="rounded-lg  object-cover "
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.2 }}
+      
+      className="h-80 w-80 rounded-sm overflow-hidden "
+      >
+      <LottieAnimation
+        animationData={Coder}
+        loop={true}
+        autoplay={true}
+        className="w-full h-full bg-(--primary-color)"
       />
-    </motion.section>
+       </motion.div>
+    
   );
 };
 

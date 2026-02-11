@@ -1,6 +1,6 @@
 import SectionHeading from "@/components/customUI/SectionHeading";
+import AboutRight from "@/components/sections/about/AboutRIght";
 import AboutLeft from "@/components/sections/about/AboutLeft";
-import AboutRIght from "@/components/sections/about/AboutRIght";
 import Services from "@/components/sections/about/Services";
 
 import type { Metadata } from "next";
@@ -46,8 +46,8 @@ const About = () => {
         </SectionHeading>
       </div>
       <div className="  flex flex-col justify-center items-center gap-10 md:flex-row md:gap-20">
-        <AboutLeft />
-        <AboutRIght />
+       <AboutLeft />
+        <AboutRight />
       </div>
 
       <div>
