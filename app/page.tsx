@@ -10,7 +10,7 @@ import Button from "@/components/customUI/Button";
 const page = () => {
   return (
     <>
-      <main className="flex flex-col gap-20">
+      <main className="flex flex-col gap-20 ">
         <Home />
         <About />
         <Skills />

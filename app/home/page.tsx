@@ -33,7 +33,7 @@ const page = () => {
   return (
     <section
       id="home"
-      className="mx-auto flex justify-center items-center w-full  "
+      className="mt-14 md:mt-20 mx-auto flex justify-center items-center w-full  "
     >
       <div className="flex flex-col-reverse justify-center items-center lg:gap-15  lg:flex lg:flex-row  lg:justify-center lg:items-center ">
         <HomeLeft />
