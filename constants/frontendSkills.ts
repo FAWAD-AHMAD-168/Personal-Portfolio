@@ -27,7 +27,7 @@ const frontendSkills: Skill[] = [
   },
   {
     id: 5,
-    name: "Next.js",
+    name: "Next",
     icon: "/skills/frontend/nextjs.svg",
   },
   {

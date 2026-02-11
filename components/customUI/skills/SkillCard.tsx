@@ -14,7 +14,7 @@ interface SkillCardProps {
 
 const SkillCard = ({ title, skills }: SkillCardProps) => {
   return (
-    <div className="w-full border border-blue-400 md:w-[60%] lg:w-[80%]  h-full flex flex-col items-center  bg-(--bg-skillsCard-color) gap-5 p-5 rounded-lg">
+    <div className="w-full sm:w-100  md:w-100 lg:w-100 border border-(--primary-color) h-full flex flex-col items-center  bg-(--bg-skillsCard-color) gap-5 p-5 rounded-lg">
       <h3 className="text-2xl mt-5 font-semibold text-(--text-primary-color)">
         {title}
       </h3>

@@ -7,12 +7,12 @@ interface Skill {
 const backendSkills: Skill[] = [
   {
     id: 1,
-    name: "Node.js",
+    name: "Nodejs",
     icon: "/skills/backend/nodejs.svg",
   },
   {
     id: 2,
-    name: "Express.js",
+    name: "Express",
     icon: "/skills/backend/expressjs.svg",
   },
   {
