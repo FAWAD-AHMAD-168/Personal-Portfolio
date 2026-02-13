@@ -16,9 +16,11 @@ const Header = () => {
   };
 
   return (
-    <header className=" fixed z-1000 text-(--text-primary-color) bg-(--bg-primary-color) 
+    <header
+      className=" fixed z-1000 text-(--text-primary-color) bg-(--bg-primary-color) 
     h-23 w-full mx-auto flex  items-center justify-center      
-       sm:gap-32 md:gap-16 lg:gap-26  xl-gap-30   ">
+       sm:gap-32 md:gap-16 lg:gap-26  xl-gap-30   "
+    >
       {/* Profile Section */}
 
       <div>
@@ -58,39 +60,58 @@ const Header = () => {
 
       <nav className="hidden md:flex gap-6">
         {navLinks.map((link) => (
-          <li
-            key={link.name}
-            className="list-none cursor-pointer font-medium text-(--text-primary-color) hover:text-(--primary-color) transition-all duration-300"
-            onClick={() => scrollToSection(link.href)}
-          >
-            {link.name}
-          </li>
+
+          <div key={link.name} className="group">
+          
+            <li  
+              className="list-none cursor-pointer font-medium text-(--text-primary-color)  transition-all duration-300"
+              onClick={() => scrollToSection(link.href)}
+            >
+              {link.name}
+            </li>
+            <div className="mt-0.5 font-bold  w-0 group-hover:w-full h-0.5 bg-(--primary-color)  transition-all duration-300 "></div>
+
+            </div>
+
+
+         
         ))}
       </nav>
 
       {/* Resume Button */}
 
-      
-
       {/* Medium screens  */}
       <div className="hidden md:block lg:hidden">
-        <Button variant="primary" size="sm" type="button" onClick={() => window.open("/resume.pdf", "_blank")}>
-          
-            Check Resume
-         
+        <Button
+          variant="primary"
+          size="sm"
+          type="button"
+          onClick={() => window.open("/resume.pdf", "_blank")}
+        >
+          Check Resume
         </Button>
       </div>
 
       {/* Large screens  */}
       <div className="hidden lg:block xl:hidden">
-        <Button variant="primary" size="md" type="button" onClick={() => window.open("/resume.pdf", "_blank")}>
+        <Button
+          variant="primary"
+          size="md"
+          type="button"
+          onClick={() => window.open("/resume.pdf", "_blank")}
+        >
           Check Resume
         </Button>
       </div>
 
       {/* Extra large  */}
       <div className="hidden xl:block">
-        <Button variant="primary" size="lg" type="button"   onClick={() => window.open("/resume.pdf", "_blank")}>
+        <Button
+          variant="primary"
+          size="lg"
+          type="button"
+          onClick={() => window.open("/resume.pdf", "_blank")}
+        >
           Check Resume
         </Button>
       </div>

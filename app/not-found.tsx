@@ -1,13 +1,15 @@
 
 import notFoundAnimation from "@/public/lottie/notfound.json";
 import LottieAnimation from "@/components/lottiefiles/LottieAnimation";
+import Button from "@/components/customUI/Button";
+import Link from "next/link";
 
 const NotFound = () => {
   return (
     <div className="min-h-screen w-full flex flex-col justify-center items-center gap-6 px-6 text-center bg-(--header-bg-color)">
       
       {/* Animation */}
-      <div className="w-56 h-56 md:w-72 md:h-72 mt-26">
+      <div className="w-46 h-46  mt-10">
         <LottieAnimation
           animationData={notFoundAnimation}
           loop
@@ -26,6 +28,13 @@ const NotFound = () => {
         Oops! The page you are looking for doesn’t exist or has been moved.
 
       </p>
+
+      
+      <Link href="/">
+        <Button variant="primary" size="md" type="button">
+          Go Back Home
+        </Button>
+      </Link>
 
     </div>
   );

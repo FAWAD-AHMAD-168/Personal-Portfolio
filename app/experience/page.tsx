@@ -30,7 +30,7 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <section  id="experience" className="w-full h-screen flex flex-col mx-auto  items-center gap-10 mt-20">
+    <section  id="experience" className="w-full  flex flex-col mx-auto  items-center gap-10 mt-20 ">
       <h2 className="mx-auto">
         <SectionHeading>Experience </SectionHeading>
       </h2>
@@ -39,7 +39,7 @@ const page = () => {
         My work experience includes developing software and contributing to
         various projects across different companies.
       </p>
-      <div className="flex flex-col items-center  w-[70%] h-screen mx-auto  gap-15  ">
+      <div className="flex flex-col items-center  w-[70%]  mx-auto  gap-15  ">
         {experiences.map((experience, index) => (
           <ExperienceCard
             key={index}

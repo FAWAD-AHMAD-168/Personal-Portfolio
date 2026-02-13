@@ -18,7 +18,7 @@ const ExperienceCard = ({
 }: ExperienceCardProps) => {
   return (
     // main card container
-    <section className="flex gap-2">
+    <section className="flex gap-2   ">
       {/* a simple design before the content */}
       <div className="w-6.25 flex flex-col justify-center items-center gap-6">
         <div className=" h-20 w-0.5 bg-(--primary-color) rounded-sm"></div>
@@ -27,8 +27,8 @@ const ExperienceCard = ({
           <Image
             src="/experience/circle.svg"
             alt="circle"
-            width={10}
-            height={10}
+            width={15}
+            height={15}
           />
         </div>
 
@@ -37,10 +37,13 @@ const ExperienceCard = ({
 
       {/* experience card  container */}
 
-      <div className="w-75 h-110  md:w-150 md:h-70 flex flex-col gap-10 border  border-(--primary-color) rounded-xl ">
+      <div
+        className="w-75 h-110  md:w-150 md:h-70 flex flex-col gap-10 border  border-(--primary-color) bg-(--bg-primary-color) rounded-xl hover:scale-102
+       hover:shadow-lg shadow-gray-500 transition-all duration-500 cursor-context-menu "
+      >
         {/* company logo and name container */}
 
-        <div className="flex flex-col ">
+        <div className="flex flex-col  ">
           <div className="flex gap-2 p-4 md:ml-3 md:p-6 ">
             <Image
               src={companyLogo}
