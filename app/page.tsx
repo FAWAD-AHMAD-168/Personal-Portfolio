@@ -5,6 +5,7 @@ import Skills from "./skills/page";
 import Experience from "./experience/page";
 import Header from "@/components/sections/header/Header";
 import Contact from "./contact/page";
+import Footer from "@/components/sections/footer/Footer";
 
 const page = () => {
   return (
@@ -16,7 +17,10 @@ const page = () => {
         <Skills />
         <Experience />
 
-        <Contact />
+        <div>
+          <Contact />
+          <Footer />
+        </div>
       </main>
     </>
   );
