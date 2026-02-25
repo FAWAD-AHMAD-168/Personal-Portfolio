@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 
-import ToastProvider from "@/components/customUI/ToastProvider";
+
+import { Toaster } from "@/components/ui/sonner"
+
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -10,7 +12,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Fawad Ahmad - Personal Portfolio",
+  title: "Fawad Ahmad",
   description:
     "Welcome to my personal portfolio! I am a passionate software developer with expertise in web development, mobile and app development. Explore my projects, skills, and experience to see how I can contribute to your next project.",
 };
@@ -27,7 +29,7 @@ export default function RootLayout({
       >
         {children}
 
-        <ToastProvider />
+        <Toaster richColors position="top-right"/>
       </body>
     </html>
   );
