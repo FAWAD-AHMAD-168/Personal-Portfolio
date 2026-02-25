@@ -17,7 +17,7 @@ const Header = () => {
 
   return (
     <header
-      className=" fixed z-1000 text-(--text-primary-color) bg-(--bg-primary-color) 
+      className=" fixed z-1000 text-(--text-primary-color) bg-slate-900/80 backdrop-blur-md 
     h-23 w-full mx-auto flex  items-center justify-center      
        sm:gap-32 md:gap-16 lg:gap-26  xl-gap-30   "
     >

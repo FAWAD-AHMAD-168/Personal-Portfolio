@@ -13,7 +13,7 @@ const Footer = () => {
         style={{
           backgroundColor: "var(--bg-secondary-color)",
           clipPath: "polygon(23% 79%, 0% 100%, 100% 100%)",
-          // clipPath: "polygon(20% 65%, 0 100%, 100% 100%)",
+          
 
         }}
       ></div>
@@ -51,7 +51,7 @@ const Footer = () => {
               alt="Facebook"
               width={30}
               height={30}
-              className="cursor-pointer transition duration-300 hover:brightness-0 hover:invert"
+              className="cursor-pointer transition duration-300  hover:brightness-0 hover:invert"
             />
           </Link>
 
@@ -100,8 +100,8 @@ const Footer = () => {
           />
 
           <p>
-            <span className="font-semibold text-(--text-secondary-color) ">
-              2026 FAWAD AHMAD -{" "}
+            <span className=" text-(--text-secondary-color) ">
+              2026 Fawad Ahmad -{" "}
             </span>{" "}
             <span className="text-(--text-secondary-color)">
               All rights reserved.{" "}

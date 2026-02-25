@@ -1,27 +1,27 @@
-// import Home from "./home/page";
-// import About from "./about/page";
+import Home from "./home/page";
+import About from "./about/page";
 import Projects from "./projects/page";
-// import Skills from "./skills/page";
-// import Experience from "./experience/page";
-// import Header from "@/components/sections/header/Header";
-// import Contact from "./contact/page";
-// import Footer from "@/components/sections/footer/Footer";
+import Skills from "./skills/page";
+import Experience from "./experience/page";
+import Header from "@/components/sections/header/Header";
+import Contact from "./contact/page";
+import Footer from "@/components/sections/footer/Footer";
 
 const page = () => {
   return (
     <>
       <main className="flex flex-col gap-20 ">
-        {/* <Header />
+        <Header />
         <Home />
         <About />
         <Skills />
-        <Experience /> */}
+        <Experience />
         <Projects />
 
-        {/* <div>
+        <div>
           <Contact />
           <Footer />
-        </div> */}
+        </div>
       </main>
     </>
   );
