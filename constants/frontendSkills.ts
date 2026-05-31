@@ -40,6 +40,11 @@ const frontendSkills: Skill[] = [
     name: "TypeScript",
     icon: "/skills/frontend/typescript.svg",
   },
+  {
+    id: 8,
+    name: "Flutter",
+    icon: "/skills/frontend/flutter.svg",
+  },
 ];
 
 export default frontendSkills;

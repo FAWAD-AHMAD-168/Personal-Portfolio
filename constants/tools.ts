@@ -29,6 +29,11 @@ const tools: Tool[] = [
     name: "Postman",
     icon: "/skills/tools/postman.svg",
   },
+  {
+    id: 5,
+    name: "Docker",
+    icon: "/skills/tools/docker.svg",
+  }
 ];
 
 export default tools;

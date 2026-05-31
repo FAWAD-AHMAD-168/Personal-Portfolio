@@ -49,9 +49,11 @@ const ProjectFilters = () => {
           transition={{ duration: 0.3 }}
           className="w-full sm:w-[85%] mt-12 lg:w-[80%] xl:max-w-275 grid grid-cols-1 gap-10 place-items-center md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3"
         > 
-          {filteredProjects.map((project, index) => (
+          {filteredProjects.map((project) => (
             <ProjectCard
-              key={index}
+              key={project.id}
+              id={project.id}
+              slug={project.slug}
               imageSrc={project.imageSrc}
               projectType={project.projectType}
               date={project.date}

@@ -25,7 +25,7 @@ const HomeRight = () => {
         transition={{ duration: 0.7 }}
       >
         <Image
-          src="/home/profile pic.svg"
+          src="/home/profile pic.png"
           alt="profile"
           width={300}
           height={300}

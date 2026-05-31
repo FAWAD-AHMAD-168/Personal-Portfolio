@@ -1,7 +1,6 @@
 import SectionHeading from "@/components/customUI/SectionHeading";
 import ProjectFilter from "@/components/customUI/project/ProjectFilter";
 
-
 const page = () => {
   return (
     <section

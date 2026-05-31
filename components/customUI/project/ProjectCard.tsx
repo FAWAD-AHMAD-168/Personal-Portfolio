@@ -12,8 +12,11 @@ import {
 } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Code } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 
 interface ProjectCardProps {
+  id: number;
+  slug: string;
   imageSrc: string;
   projectType: string;
   githubLink: string;
@@ -59,8 +62,17 @@ const ProjectCard = (props: ProjectCardProps) => {
           </p>
         </div>
 
-        <CardTitle className="text-(--text-primary-color) font-semibold text-[18px]">
-          {props.projectTitle}
+        <CardTitle className=" group  w-[115%]   text-(--text-primary-color) font-semibold text-[18px] ">
+          <Link
+            href={`/projects/${props.slug}`}
+            className="flex items-center group-hover:text-(--primary-color) transition-all duration-300"
+          >
+            {props.projectTitle}
+            <ExternalLink
+              size={20}
+              className=" opacity-0 text-(--primary-color) group-hover:opacity-100 ml-1  transition-all duration-300"
+            />
+          </Link>
         </CardTitle>
 
         <CardDescription className="mt-2 w-[120%] text-(--text-secondary-color) font-light text-[13px]">
