@@ -3,6 +3,8 @@ import getProjectBySlug from "@/utils/GetProjectBySlug";
 import ProjectHeroLeft from "@/components/projectDetails/home/ProjectHeroLeft";
 import ProjectHeroRight from "@/components/projectDetails/home/ProjectHeroRight";
 import TechStack from "@/components/projectDetails/tech/TechStack";
+import Features from "@/components/projectDetails/features/Features";
+// import Footer from "@/components/sections/footer/Footer";
 import NotFoundPage from "@/app/not-found";
 
 interface PageProps {
@@ -22,9 +24,9 @@ async function Page({ params }: PageProps) {
   }
 
   return (
-    <section className="max-w-262.5 h-[200vh] flex flex-col">
+    <section className="max-w-262.5 h-[400vh] flex flex-col">
       {/*  header */}
-      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-1000   w-[90%]   bg-slate-900/80 backdrop-blur-md h-20 flex items-center  ">
+      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-1000   w-[90%]  bg-slate-900/80 backdrop-blur-sm h-20 flex items-center  ">
         <BackButton />
       </header>
 
@@ -36,6 +38,7 @@ async function Page({ params }: PageProps) {
         </section>
 
         <TechStack project={project} />
+        <Features project={project} />
       </main>
     </section>
   );

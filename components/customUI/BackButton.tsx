@@ -8,7 +8,7 @@ const BackButton = () => {
     <div className="group ">
       <button
         type="button"
-        onClick={() => router.push("/#projects")}
+        onClick={() => router.back()}
         className="flex text-(--text-secondary-color) text-[14px] font-semibold  group-hover:text-(--text-primary-color) transition-all duration-400     cursor-pointer"
       >
         <CircleArrowLeft

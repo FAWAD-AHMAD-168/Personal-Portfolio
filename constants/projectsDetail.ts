@@ -9,7 +9,7 @@ export interface ProjectDetails {
   livedemolink?: string;
   duration: string;
   techStack: { icon: string; name: string; width?: number; height?: number }[];
-  features: string[];
+  features: { icon: string; title: string; description: string }[];
   //   desktopScreenshots: string[];
   //   tabletScreenshots: string[];
   //   mobileScreenshots: string[];
@@ -29,16 +29,36 @@ const ProjectDetailsData: ProjectDetails[] = [
     techStack: [
       { icon: "/skills/frontend/html.svg", name: "HTML" },
       { icon: "/skills/frontend/css.svg", name: "CSS" },
-      
-      
     ],
     duration: "Feb 2025 - Mar 2025",
     features: [
-      "Implemented a fully responsive layout for mobile, tablet, and desktop.",
-      "Implemented CSS Grid for the features section layout",
-      "Used Flexbox for alignment and component positioning",
-      "Implemented a structured and responsive footer",
-      "Maintained consistent spacing, typography, and color styling",
+      {
+        icon: "/features/learnify/respo.svg",
+        title: "Responsive Design",
+        description:
+          "Implemented a fully responsive layout for mobile, tablet, and desktop.",
+      },
+      {
+        icon: "/features/learnify/grid.svg",
+        title: "CSS Grid",
+        description: "Implemented CSS Grid for the features section layout",
+      },
+      {
+        icon: "/features/learnify/flex.svg",
+        title: "Flexbox",
+        description: "Used Flexbox for alignment and component positioning",
+      },
+      {
+        icon: "/features/learnify/footer.svg",
+        title: "Structured Footer",
+        description: "Implemented a structured and responsive footer",
+      },
+      {
+        icon: "/features/learnify/typography.svg",
+        title: "Consistent Styling",
+        description:
+          "Maintained consistent spacing, typography, and color styling",
+      },
     ],
     livedemolink: "https://learnify-learning-app.netlify.app/",
   },

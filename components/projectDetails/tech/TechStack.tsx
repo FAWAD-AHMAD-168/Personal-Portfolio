@@ -20,7 +20,7 @@ const TechStack = ({ project }: TechStackProps) => {
         This project was built using the following technologies.
       </p>
 
-      <div className="grid grid-cols-4 max-[450px]:grid-cols-3 gap-7 mt-15 p-4  ">
+      <div className="bg-(--bg-secondary-color) rounded-lg grid grid-cols-4  max-[450px]:grid-cols-3 gap-7 mt-15 p-4  ">
         {project.techStack.map((tech, index) => (
           <Tooltip key={index}>
             <TooltipTrigger>
