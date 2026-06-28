@@ -4,6 +4,7 @@ import ProjectHeroLeft from "@/components/projectDetails/home/ProjectHeroLeft";
 import ProjectHeroRight from "@/components/projectDetails/home/ProjectHeroRight";
 import TechStack from "@/components/projectDetails/tech/TechStack";
 import Features from "@/components/projectDetails/features/Features";
+import Showcase from "@/components/projectDetails/showcase/showcase";
 // import Footer from "@/components/sections/footer/Footer";
 import NotFoundPage from "@/app/not-found";
 
@@ -39,6 +40,7 @@ async function Page({ params }: PageProps) {
 
         <TechStack project={project} />
         <Features project={project} />
+        <Showcase project={project} />
       </main>
     </section>
   );

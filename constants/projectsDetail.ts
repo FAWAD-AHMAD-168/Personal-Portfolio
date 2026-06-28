@@ -10,9 +10,7 @@ export interface ProjectDetails {
   duration: string;
   techStack: { icon: string; name: string; width?: number; height?: number }[];
   features: { icon: string; title: string; description: string }[];
-  //   desktopScreenshots: string[];
-  //   tabletScreenshots: string[];
-  //   mobileScreenshots: string[];
+  showcaseImages: { image: string; title: string; description: string }[];
 }
 
 const ProjectDetailsData: ProjectDetails[] = [
@@ -58,6 +56,33 @@ const ProjectDetailsData: ProjectDetails[] = [
         title: "Consistent Styling",
         description:
           "Maintained consistent spacing, typography, and color styling",
+      },
+    ],
+    showcaseImages: [
+      {
+        image: "/project_details/learnify/hero1.jpeg",
+        title: "Header and Hero Section",
+        description:
+          "The header and hero section provide the first impression of the platform, featuring intuitive navigation, a compelling headline, and clear call-to-action buttons that introduce the platform's purpose and encourage user engagement.",
+      },
+      {
+        image: "/project_details/learnify/grid.jpeg",
+        title: "Feature Grid",
+        description:
+          "This section presents the key aspects of the platform in a structured grid layout, allowing users to quickly understand the main features, benefits, and areas of focus offered by the website.",
+      },
+      {
+        image: "/project_details/learnify/testimonials.jpeg",
+        title: "Testimonials and Newsletter",
+        description:
+          "The testimonial and newsletter section combines social proof with user engagement by showcasing feedback from users and providing an email subscription form to receive updates and announcements.",
+      },
+      {
+
+        image: "/project_details/learnify/footer1.jpeg",
+        title: "Structured Footer",
+        description:
+          "The footer serves as the final navigation area of the website, providing quick access to important links, contact information, and additional resources while maintaining a clean and organized layout.",
       },
     ],
     livedemolink: "https://learnify-learning-app.netlify.app/",

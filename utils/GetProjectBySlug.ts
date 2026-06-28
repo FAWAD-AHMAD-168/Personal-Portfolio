@@ -11,7 +11,8 @@ interface Project {
   projImg: string;
   duration: string;
   techStack: { icon: string; name: string; width?: number; height?: number }[];
-  features: {icon: string; title: string; description: string}[];
+  features: { icon: string; title: string; description: string }[];
+  showcaseImages: { image: string; title: string; description: string }[];
 }
 
 const getProjectBySlug = (slug: string): Project | undefined => {
