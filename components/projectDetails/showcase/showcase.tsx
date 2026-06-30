@@ -10,6 +10,7 @@ import {
   type CarouselApi,
 } from "@/components/ui/carousel";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 import SectionHeading from "@/components/customUI/SectionHeading";
 import type { ProjectDetails } from "@/constants/projectsDetail";
@@ -34,7 +35,13 @@ const Showcase = ({ project }: ShowcaseProps) => {
   }, [api]);
 
   return (
-    <section className="flex flex-col items-center gap-6">
+    <motion.section 
+    initial={{ opacity: 0, }}
+    animate={{ opacity: 1 }}
+    transition={{ duration: 0.5, delay: 1.6 }}
+
+    
+    className="flex flex-col items-center gap-6 mt-20">
       <SectionHeading>Visual Showcase</SectionHeading>
 
       <p className="w-[90%] text-center text-(--text-secondary-color) lg:w-[60%] mt-10 mb-5">
@@ -42,7 +49,7 @@ const Showcase = ({ project }: ShowcaseProps) => {
         throughout the project.
       </p>
 
-      {/* Desktop Carousel */}
+      {/*  Carousel */}
 
       <main className="flex flex-col gap-5 w-full   items-center">
         <Carousel
@@ -54,15 +61,18 @@ const Showcase = ({ project }: ShowcaseProps) => {
         >
           <CarouselContent>
             {project.showcaseImages.map((image, index) => (
-              <CarouselItem key={index} className="group relative cursor-pointer">
+              <CarouselItem
+                key={index}
+                className="group relative cursor-pointer"
+              >
                 <Image
                   src={image.image}
                   alt={image.description}
                   width={1200}
                   height={700}
-                  className="  w-full rounded-lg aspect-auto group-hover:opacity-25 transition-all duration-600 ease-in-out"
+                  className="  w-full rounded-lg aspect-auto group-hover:opacity-15 transition-all duration-500 ease-in-out"
                 />
-                <div className="absolute inset-0 z-100 group-hover:flex flex-col justify-center items-center hidden  transition-all duration-300 ease-in-out">
+                <div className="absolute inset-0 z-100 flex  group-hover:opacity-100 group-hover:gap-0 flex-col justify-center items-center opacity-0 gap-5  transition-all duration-700 ease-in-out">
                   <h4 className="text-center text-[24px] font-bold text-(--text-primary-color) mb-2">
                     {image.title}
                   </h4>
@@ -84,7 +94,7 @@ const Showcase = ({ project }: ShowcaseProps) => {
           {current} of {count}
         </p>
       </main>
-    </section>
+    </motion.section>
   );
 };
 

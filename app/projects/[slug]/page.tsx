@@ -5,8 +5,8 @@ import ProjectHeroRight from "@/components/projectDetails/home/ProjectHeroRight"
 import TechStack from "@/components/projectDetails/tech/TechStack";
 import Features from "@/components/projectDetails/features/Features";
 import Showcase from "@/components/projectDetails/showcase/showcase";
-// import Footer from "@/components/sections/footer/Footer";
-import NotFoundPage from "@/app/not-found";
+import Footer from "@/components/projectDetails/footer/footer";
+import { notFound } from "next/navigation";
 
 interface PageProps {
   params: Promise<{
@@ -21,19 +21,19 @@ async function Page({ params }: PageProps) {
   const project = getProjectBySlug(slug);
 
   if (!project) {
-    return <NotFoundPage />;
+    return notFound();
   }
 
   return (
-    <section className="max-w-262.5 h-[400vh] flex flex-col">
+    <section className="mx-auto max-w-262.5 flex  ">
       {/*  header */}
-      <header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-1000   w-[90%]  bg-slate-900/80 backdrop-blur-sm h-20 flex items-center  ">
+      <header className="z-1000 fixed top-7 max-[1100px]:left-7  ">
         <BackButton />
       </header>
 
       {/* Main content */}
-      <main className="w-[90%] max-w-262.5  absolute top-30 left-1/2 -translate-x-1/2 flex flex-col gap-20 ">
-        <section className="flex   justify-center items-center max-[850px]:flex-col-reverse  gap-10 ">
+      <main className="w-[90%] max-w-262.5     absolute top-25 left-1/2 -translate-x-1/2 flex flex-col gap-20 ">
+        <section className="mx-auto p-3  flex  justify-center items-center   max-[850px]:flex-col-reverse  gap-10 ">
           <ProjectHeroLeft project={project} />
           <ProjectHeroRight project={project} />
         </section>
@@ -42,6 +42,9 @@ async function Page({ params }: PageProps) {
         <Features project={project} />
         <Showcase project={project} />
       </main>
+      <div className="w-full absolute top-[420vh] left-0  flex justify-center items-center -mt-6">
+        <Footer />
+      </div>
     </section>
   );
 }

@@ -17,26 +17,34 @@ const NotFound = () => {
       </div>
 
       <span className="text-sm font-semibold uppercase tracking-[0.25em] text-(--primary-color)">
-        Error 404
+        Project Not Found
       </span>
 
-      {/* Heading */}
       <h1 className="text-4xl md:text-6xl font-bold text-(--text-primary-color)">
-        Page Not Found
+        Oops! This Project Doesn&apos;t Exist
       </h1>
 
-      {/* Message */}
       <p className="max-w-lg text-[16px] md:text-lg text-(--text-secondary-color)">
-        Oops! The page you&apos;re looking for doesn&apos;t exist, may have been
-        moved, or the URL may be incorrect.
+        The project you&apos;re looking for may have been removed, renamed, or
+        the link you followed is incorrect. Explore other projects or head back
+        to the portfolio.
       </p>
 
-      {/* Action */}
-      <Link href="/">
-        <Button variant="primary" size="md" type="button">
-          Back to Home
-        </Button>
-      </Link>
+      {/* Actions */}
+
+      <div className="flex flex-col sm:flex-row gap-4 mt-2">
+        <Link href="/#projects">
+          <Button variant="primary" size="md" type="button">
+            Explore Projects
+          </Button>
+        </Link>
+
+        <Link href="/">
+          <Button variant="secondary" size="md" type="button">
+            Back to Home
+          </Button>
+        </Link>
+      </div>
     </div>
   );
 };

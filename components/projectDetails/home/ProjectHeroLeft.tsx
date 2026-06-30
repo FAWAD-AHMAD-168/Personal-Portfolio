@@ -1,24 +1,46 @@
+"use client";
 import Link from "next/link";
 import Button from "@/components/customUI/Button";
-import type {ProjectDetails} from "@/constants/projectsDetail";
+import { motion } from "framer-motion";
+import type { ProjectDetails } from "@/constants/projectsDetail";
 type ProjectHeroLeftProps = {
   project: ProjectDetails;
 };
 
 const ProjectHeroLeft = ({ project }: ProjectHeroLeftProps) => {
   return (
-    <div className="w-full min-[850px]:w-[50%] flex flex-col  gap-6    ">
-      <h2 className="text-(--text-primary-color) text-4xl font-bold ">
+    <div className="w-full min-[850px]:w-[50%] flex flex-col  gap-6   ">
+      <motion.h2
+        initial={{ opacity: 0, x: -60 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 1.3 }}
+        className="text-(--text-primary-color) text-4xl font-bold  text-center min-[850px]:text-left "
+      >
         {project?.title}
-      </h2>
-      <p className="block lg:hidden text-(--text-secondary-color) text-[16px] w-[90%] ">
+      </motion.h2>
+      <motion.p
+        initial={{ opacity: 0, x: -60 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 1.4 }}
+        className="block lg:hidden text-(--text-secondary-color) text-[16px] w-[90%] text-center min-[850px]:text-left "
+      >
         {project?.descriptionForSmallerScreens}
-      </p>
+      </motion.p>
 
-      <p className="hidden lg:block text-(--text-secondary-color) text-[16px] w-[90%] ">
+      <motion.p
+        initial={{ opacity: 0, x: -60 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 1.4 }}
+        className="hidden lg:block text-(--text-secondary-color) text-[16px] w-[90%] "
+      >
         {project?.description}
-      </p>
-      <div className=" hidden md:flex  gap-4 mt-6 ">
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0, x: -60 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
+        className=" hidden md:flex  gap-4 mt-6 justify-center min-[850px]:justify-start "
+      >
         <Link href={project?.githubRepoLink || "#"} target="_blank">
           <Button
             type="button"
@@ -44,11 +66,16 @@ const ProjectHeroLeft = ({ project }: ProjectHeroLeftProps) => {
             </Button>
           </Link>
         )}
-      </div>
+      </motion.div>
 
       {/* Smaller Buttons for the responsive design   */}
 
-      <div className="flex  gap-4 mt-6 md:hidden  ">
+      <motion.div
+        initial={{ opacity: 0, x: -60 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5, delay: 1.5 }}
+        className="flex  gap-4 mt-6 md:hidden justify-center min-[850px]:justify-start "
+      >
         <Link href={project?.githubRepoLink || "#"} target="_blank">
           <Button
             type="button"
@@ -74,7 +101,7 @@ const ProjectHeroLeft = ({ project }: ProjectHeroLeftProps) => {
             </Button>
           </Link>
         )}
-      </div>
+      </motion.div>
     </div>
   );
 };
