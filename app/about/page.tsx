@@ -1,11 +1,11 @@
 import SectionHeading from "@/components/customUI/SectionHeading";
-import AboutRight from "@/components/sections/about/AboutRIght";
+import AboutRight from "@/components/sections/about/AboutRight";
 import AboutLeft from "@/components/sections/about/AboutLeft";
 import Services from "@/components/sections/about/Services";
 
 import type { Metadata } from "next";
 
-export const metadata:Metadata = {
+export const metadata: Metadata = {
   title: "About Me | MERN Stack Developer – Fawad Ahmad",
   description:
     "Learn more about Fawad Ahmad, a MERN Stack Developer pursuing Computer Science at the University of Gujrat, skilled in HTML, CSS, Tailwind CSS, JavaScript, React, and Node.js.",
@@ -32,12 +32,11 @@ export const metadata:Metadata = {
   },
 };
 
-
 const About = () => {
   return (
     <section
       id="about"
-      className="  mx-auto   w-[90%] text-white flex flex-col  items-center gap-15
+      className="max-w-250 mx-auto w-full text-white flex flex-col  items-center gap-15
     "
     >
       <div className="flex justify-center">
@@ -46,7 +45,7 @@ const About = () => {
         </SectionHeading>
       </div>
       <div className="  flex flex-col justify-center items-center gap-10 md:flex-row md:gap-20">
-       <AboutLeft />
+        <AboutLeft />
         <AboutRight />
       </div>
 
