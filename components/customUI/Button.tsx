@@ -3,9 +3,9 @@ import Image from "next/image";
 
 const variantClasses = {
   primary:
-    " flex justify-center items-center gap-2 bg-gradient-to-r from-(--primary-color) to-(--accent-color) text-(--text-primary-color) hover:from-(--accent-color) hover:to-(--accent-color) transition duration-300",
+    " flex justify-center items-center gap-2 bg-gradient-to-r from-(--primary-color) to-(--accent-color) text-(--text-primary-color) hover:from-(--accent-color) hover:to-(--accent-color) active:scale-95 transition duration-300",
   secondary:
-    "bg-[var(--bg-button-secondary)] text-white hover:bg-gray-700 transition duration-300 flex justify-center items-center gap-2",
+    "bg-[var(--bg-button-secondary)] text-white hover:bg-gray-700 active:scale-95 transition duration-300 flex justify-center items-center gap-2",
   ghost:
     "bg-transparent  text-(--text-primary-color) hover:bg-gray-100 transition duration-300 flex justify-center items-center gap-2",
 };

@@ -34,21 +34,21 @@ const page = () => {
   return (
     <section
       id="home"
-      className=" mt-14 md:mt-20 mx-auto flex flex-col justify-center items-center w-full  "
+      className=" mt-23 mx-auto flex flex-col justify-center items-center max-w-250 "
     >
-      <div className="flex flex-col-reverse justify-center items-center lg:gap-15  lg:flex lg:flex-row  lg:justify-center lg:items-center ">
+      <div className="flex flex-col-reverse justify-center items-center  lg:gap-7  lg:flex lg:flex-row  lg:justify-center lg:items-center ">
         <HomeLeft />
         <HomeRight />
-        
       </div>
 
       <div className=" mx-auto mt-5 md:mt-15  ">
-        <Image src="/home/homeshape.svg" alt="shape" width={1320} height={700} />
-        </div>
-
-
-
-
+        <Image
+          src="/home/homeshape.svg"
+          alt="shape"
+          width={1320}
+          height={700}
+        />
+      </div>
     </section>
   );
 };

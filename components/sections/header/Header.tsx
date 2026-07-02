@@ -17,9 +17,9 @@ const Header = () => {
 
   return (
     <header
-      className=" fixed z-1000 text-(--text-primary-color) bg-slate-900/80 backdrop-blur-md 
-    h-23 w-full mx-auto flex  items-center justify-center      
-       sm:gap-32 md:gap-16 lg:gap-26  xl-gap-30   "
+      className=" fixed z-1000 text-(--text-primary-color) bg-slate-900/80 rounded-lg   backdrop-blur-md 
+    h-23 w-full mx-auto flex  items-center justify-between  min-[851px]:justify-center  gap-10    
+       sm:gap-32 md:gap-14 lg:gap-22  xl-gap-30   "
     >
       {/* Profile Section */}
 
@@ -40,15 +40,24 @@ const Header = () => {
     shadow-(--primary-color) 
   "
           />
-
-          <h1 className="block sm:block md:hidden lg:block xl:block   text-[16px] sm:text-[16px] md:text-[16px] lg:text-[18px] xl:text-[24px] text-(--text-primary-color) font-semibold">
+          <h1
+            className="
+    block
+    min-[851px]:max-[897px]:hidden
+    text-[16px]
+    lg:text-[18px]
+    xl:text-[24px]
+    text-(--text-primary-color)
+    font-semibold
+  "
+          >
             Fawad{" "}
-            <span className=" bg-(--primary-color) bg-clip-text text-transparent">
+            <span className="bg-(--primary-color) bg-clip-text text-transparent">
               Ahmad
             </span>
           </h1>
 
-          <h1 className="hidden sm:hidden md:block lg:hidden xl:hidden ">
+          <h1 className="hidden min-[851px]:max-[897px]:block">
             <span className="font-semibold bg-(--primary-color) bg-clip-text text-transparent">
               Fawad.
             </span>
@@ -58,30 +67,24 @@ const Header = () => {
 
       {/* Nav Menu */}
 
-      <nav className="hidden md:flex gap-6">
+      <nav className="hidden min-[851px]:flex gap-6">
         {navLinks.map((link) => (
-
           <div key={link.name} className="group">
-          
-            <li  
+            <li
               className="list-none cursor-pointer font-medium text-(--text-primary-color)  transition-all duration-300"
               onClick={() => scrollToSection(link.href)}
             >
               {link.name}
             </li>
             <div className="mt-0.5 font-bold  w-0 group-hover:w-full h-0.5 bg-(--primary-color)  transition-all duration-300 "></div>
-
-            </div>
-
-
-         
+          </div>
         ))}
       </nav>
 
       {/* Resume Button */}
 
       {/* Medium screens  */}
-      <div className="hidden md:block lg:hidden">
+      <div className="hidden min-[851px]:block lg:hidden">
         <Button
           variant="primary"
           size="sm"
@@ -116,7 +119,7 @@ const Header = () => {
         </Button>
       </div>
 
-      <div className="block md:hidden">
+      <div className="block min-[851px]:hidden">
         <Hamburger />
       </div>
 
