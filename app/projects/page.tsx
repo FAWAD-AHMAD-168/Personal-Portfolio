@@ -5,7 +5,7 @@ const page = () => {
   return (
     <section
       id="projects"
-      className="w-full  flex flex-col gap-10 items-center   py-20 bg-linear-to-b from-slate-900 to-slate-800
+      className="w-full  flex flex-col gap-10 items-center   py-20 
 "
     >
       <h2 className="mx-auto">

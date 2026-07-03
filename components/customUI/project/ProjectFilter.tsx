@@ -47,7 +47,7 @@ const ProjectFilters = () => {
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -30 }}
           transition={{ duration: 0.3 }}
-          className="w-full sm:w-[85%] mt-12 lg:w-[80%] xl:max-w-275 grid grid-cols-1 gap-10 place-items-center md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3"
+          className="w-full sm:w-[85%] mt-12 lg:w-[80%] xl:max-w-275 grid grid-cols-1 gap-x-10 gap-y-20 place-items-center md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 "
         > 
           {filteredProjects.map((project) => (
             <ProjectCard

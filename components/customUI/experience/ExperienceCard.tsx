@@ -39,7 +39,7 @@ const ExperienceCard = ({
 
       <div
         className="w-75 h-110  md:w-150 md:h-70 flex flex-col gap-10 border  border-(--primary-color) bg-(--bg-primary-color) rounded-xl hover:scale-102
-       hover:shadow-lg shadow-gray-500 transition-all duration-500 cursor-context-menu "
+       hover:shadow-lg shadow-gray-700 transition-all duration-500 cursor-pointer "
       >
         {/* company logo and name container */}
 

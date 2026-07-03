@@ -11,12 +11,24 @@ const page = () => {
   return (
     <>
       <main className="flex flex-col gap-20 ">
-         <Header />
+        <Header />
         <Home />
         <About />
         <Skills />
-        <Experience />
-        <Projects />
+
+        {/* Experience and projects together for a better visuals */}
+
+        <section className="flex flex-col gap-20 bg-linear-to-b from-slate-900 to-slate-800">
+          <Experience />
+          <Projects />
+          <div
+            className="w-full h-55 md:h-75 -mt-25 -mb-0.5 "
+            style={{
+              backgroundColor: "var(--bg-primary-color)",
+              clipPath: "polygon(77% 79%, 100% 100%, 0% 100%)",
+            }}
+          ></div>
+        </section>
 
         <div>
           <Contact />

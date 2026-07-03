@@ -9,23 +9,22 @@ interface Project {
   techStack: string[];
   githubLink: string;
 }
-
- const projectsData: Project[] = [
+const projectsData: Project[] = [
   {
     id: 1,
-    imageSrc: "/projects/learnify.svg",
+    imageSrc: "/projects/yts.svg",
     projectType: "Web",
-    date: "Mar 2025",
-    projectTitle: "Learnify",
-    slug: "learnify",
+    date: "Aug 2025",
+    projectTitle: "MERN Auth System",
+    slug: "mern-auth-system",
     projectDescription:
-      "Learnify marks the beginning of my web development journey — a responsive landing page designed with pure HTML and CSS. It showcases a clean layout, engaging sections, and a mobile-friendly design.",
-    techStack: ["HTML", "CSS"],
-    githubLink: "https://github.com/FAWAD-AHMAD-168/Learnify",
+      "A modern MERN authentication system with secure login, registration, and OTP password reset flow. Focused on security, scalable architecture, and clean UI using React, Redux Toolkit, and Tailwind CSS.",
+    techStack: ["ReactJS", "Tailwind", "NodeJS", "ExpressJS", "MongoDB"],
+    githubLink: "https://github.com/FAWAD-AHMAD-168/MERN-AUTH",
   },
   {
     id: 2,
-    imageSrc: "/projects/yts.svg",
+    imageSrc: "/projects/yts1.svg",
     projectType: "Web",
     date: "June 2025",
     projectTitle: "YTS-YIFY Movies Clone",
@@ -37,17 +36,20 @@ interface Project {
   },
   {
     id: 3,
-    imageSrc: "/projects/jio.svg",
+    imageSrc: "/projects/learnify.svg",
     projectType: "Web",
-    date: "Aug 2025",
-    projectTitle: "MERN Auth System",
-    slug: "mern-auth-system",
+    date: "Mar 2025",
+    projectTitle: "Learnify",
+    slug: "learnify",
     projectDescription:
-      "A modern MERN authentication system with secure login, registration, and OTP password reset flow. Focused on security, scalable architecture, and clean UI using React, Redux Toolkit, and Tailwind CSS..",
-    techStack: ["ReactJS","Tailwind", "NodeJS", "ExpressJS", "MongoDB"],
-    githubLink: "https://github.com/FAWAD-AHMAD-168/MERN-AUTH",
-  }
+      "Learnify marks the beginning of my web development journey — a responsive landing page designed with pure HTML and CSS. It showcases a clean layout, engaging sections, and a mobile-friendly design.",
+    techStack: ["HTML", "CSS"],
+    githubLink: "https://github.com/FAWAD-AHMAD-168/Learnify",
+  },
+  
+  
 ];
+
 
 
 export default projectsData;

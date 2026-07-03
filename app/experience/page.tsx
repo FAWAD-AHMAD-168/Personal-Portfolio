@@ -30,12 +30,15 @@ export const metadata: Metadata = {
 
 const page = () => {
   return (
-    <section  id="experience" className="w-full  flex flex-col mx-auto  items-center gap-10 mt-20 ">
+    <section
+      id="experience"
+      className="  max-w-262.5 w-full  flex flex-col mx-auto  items-center gap-10 mt-20 "
+    >
       <h2 className="mx-auto">
         <SectionHeading>Experience </SectionHeading>
       </h2>
 
-      <p className="w-[90%] md:w-[50%] text-(--text-secondary-color) text-center">
+      <p className="w-[90%] md:w-[60%] text-(--text-secondary-color) text-center">
         My work experience includes developing software and contributing to
         various projects across different companies.
       </p>

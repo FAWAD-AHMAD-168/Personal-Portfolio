@@ -34,7 +34,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         alt="Project Image"
         width={10}
         height={300}
-        className="relative z-20 aspect-video w-full object-cover rounded-md"
+        className="relative z-20 aspect-video  w-full object-cover rounded-tl-md rounded-tr-md "
       />
 
       <CardHeader>

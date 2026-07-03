@@ -2,17 +2,14 @@ interface Tool {
   id: number;
   name: string;
   icon: string;
-  width?: number;
-  height?: number;
+  
 }
 
 const tools: Tool[] = [
   {
     id: 1,
     name: "Figma",
-    icon: "/skills/tools/figma.svg",
-    width: 30,
-    height: 30,
+    icon: "/skills/tools/figma1.svg",
   },
   {
     id: 2,
@@ -28,11 +25,6 @@ const tools: Tool[] = [
     id: 4,
     name: "Postman",
     icon: "/skills/tools/postman.svg",
-  },
-  {
-    id: 5,
-    name: "Docker",
-    icon: "/skills/tools/docker.svg",
   }
 ];
 
