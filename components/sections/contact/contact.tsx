@@ -1,10 +1,10 @@
 "use client";
 
 import { useForm } from "react-hook-form";
+import { toast } from "sonner";
 
 import Button from "@/components/customUI/Button";
 
-import { toast } from "sonner";
 type ContactFormData = {
   name: string;
   email: string;
@@ -18,42 +18,46 @@ const Contact = () => {
     handleSubmit,
     reset,
     formState: { errors },
-  } = useForm<ContactFormData>();
+  } = useForm<ContactFormData>({
+    mode: "onBlur",
+  });
 
   const submit = async (data: ContactFormData) => {
     try {
-      const response = await fetch("https://formspree.io/f/mwvnlrpr", {
+      const response = await fetch(process.env.NEXT_PUBLIC_FORMSPREE_URL!, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           Accept: "application/json",
         },
-
         body: JSON.stringify(data),
       });
 
       if (response.ok) {
-        toast.success("Thanks for connecting — I’ll get back to you shortly!");
+        toast.success("Message sent!", {
+          description: "I'll get back to you shortly.",
+        });
         reset();
+      } else {
+        toast.error("Failed to send message. Please try again.");
       }
     } catch (error) {
-      toast.error(
-        error instanceof Error
-          ? "Oops! Something went wrong. Please try again."
-          : "Oops! Something went wrong. Please try again.",
-      );
+      console.error(error);
+
+      toast.error("Oops! Something went wrong. Please try again.");
     }
   };
 
   return (
     <form
       onSubmit={handleSubmit(submit)}
-      className="w-[85%]  mx-auto flex flex-col gap-5 pb-10 bg-(--bg-secondary-color)"
+      className="w-[96%] sm:w-[85%] mx-auto flex flex-col gap-5 pb-10 bg-(--bg-secondary-color)"
     >
       <div>
         <input
           type="text"
           placeholder="Name"
+          autoComplete="name"
           {...register("name", {
             required: "Name is required",
             minLength: {
@@ -65,12 +69,12 @@ const Contact = () => {
               message: "Name cannot exceed 30 characters",
             },
           })}
-          className="w-full mx-auto p-3 border border-(--text-secondary-color) rounded-sm text-(--text-primary-color) bg-(--bg-secondary-color) placeholder:text-(--text-secondary-color) outline-none focus:border-(--primary-color) autofill:none "
+          className="w-full p-3 border border-(--text-secondary-color) rounded-sm text-(--text-primary-color) bg-(--bg-secondary-color) placeholder:text-(--text-secondary-color) outline-none focus:border-(--primary-color)"
         />
         {errors.name && (
-          <span className="text-[12px] text-red-500">
+          <p className="text-[12px] text-red-500">
             {errors.name.message}
-          </span>
+          </p>
         )}
       </div>
 
@@ -78,6 +82,7 @@ const Contact = () => {
         <input
           type="email"
           placeholder="Email"
+          autoComplete="email"
           {...register("email", {
             required: "Email is required",
             pattern: {
@@ -85,10 +90,12 @@ const Contact = () => {
               message: "Invalid email address",
             },
           })}
-          className="w-full mx-auto p-3 border border-(--text-secondary-color) rounded-sm text-(--text-primary-color) bg-(--bg-secondary-color) placeholder:text-(--text-secondary-color) outline-none focus:border-(--primary-color) autofill:none "
+          className="w-full p-3 border border-(--text-secondary-color) rounded-sm text-(--text-primary-color) bg-(--bg-secondary-color) placeholder:text-(--text-secondary-color) outline-none focus:border-(--primary-color)"
         />
         {errors.email && (
-          <p className="text-[12px] text-red-500">{errors.email.message}</p>
+          <p className="text-[10px] text-red-500 ">
+            {errors.email.message}
+          </p>
         )}
       </div>
 
@@ -96,6 +103,7 @@ const Contact = () => {
         <input
           type="text"
           placeholder="Subject"
+          autoComplete="off"
           {...register("subject", {
             required: "Subject is required",
             minLength: {
@@ -104,19 +112,22 @@ const Contact = () => {
             },
             maxLength: {
               value: 50,
-              message:"Subject cannot exceed 50 characters",
+              message: "Subject cannot exceed 50 characters",
             },
           })}
-          className="w-full mx-auto p-3 border border-(--text-secondary-color) rounded-sm text-(--text-primary-color) bg-(--bg-secondary-color) placeholder:text-(--text-secondary-color) outline-none focus:border-(--primary-color) autofill:none "
+          className="w-full p-3 border border-(--text-secondary-color) rounded-sm text-(--text-primary-color) bg-(--bg-secondary-color) placeholder:text-(--text-secondary-color) outline-none focus:border-(--primary-color)"
         />
         {errors.subject && (
-          <p className="text-[12px] text-red-500">{errors.subject.message}</p>
+          <p className="text-[12px] text-red-500">
+            {errors.subject.message}
+          </p>
         )}
       </div>
 
       <div>
         <textarea
           placeholder="Message"
+          autoComplete="off"
           {...register("message", {
             required: "Message is required",
             minLength: {
@@ -128,14 +139,21 @@ const Contact = () => {
               message: "Message cannot exceed 500 characters",
             },
           })}
-          className="w-full h-37.5 mx-auto p-3  border border-(--text-secondary-color) rounded-sm text-(--text-primary-color) bg-(--bg-secondary-color) placeholder:text-(--text-secondary-color) outline-none focus:border-(--primary-color) autofill:none "
+          className="w-full h-37.5 p-3 border border-(--text-secondary-color) rounded-sm text-(--text-primary-color) bg-(--bg-secondary-color) placeholder:text-(--text-secondary-color) outline-none focus:border-(--primary-color)"
         />
         {errors.message && (
-          <p className="text-[12px] text-red-500">{errors.message.message}</p>
+          <p className="text-[12px] text-red-500">
+            {errors.message.message}
+          </p>
         )}
       </div>
 
-      <Button type="submit" size="md" variant="primary" className="w-full ">
+      <Button
+        type="submit"
+        size="md"
+        variant="primary"
+        className="w-full"
+      >
         Send
       </Button>
     </form>

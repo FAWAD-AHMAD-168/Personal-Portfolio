@@ -1,7 +1,9 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
+import { Icon } from "@iconify/react";
 import { motion } from "framer-motion";
+import SocialLinks from "@/constants/social_links";
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -46,51 +48,16 @@ const Footer = () => {
         {/*  Social media icons  */}
 
         <div className="flex justify-center items-center gap-6 mt-4">
-          <Link
-            href="https://www.facebook.com/profile.php?id=100066072281042&ref=NONE_ig_profile_ac"
-            target="_blank"
-          >
-            <Image
-              src="/footer/facebook.svg"
-              alt="Facebook"
-              width={30}
-              height={30}
-              className="cursor-pointer transition duration-300  hover:brightness-0 hover:invert"
-            />
-          </Link>
-
-          <Link href="https://www.instagram.com/fawadahmad168/" target="_blank">
-            <Image
-              src="/footer/insta.svg"
-              alt="Instagram"
-              width={25}
-              height={25}
-              className="cursor-pointer transition duration-600  hover:brightness-0 hover:invert"
-            />
-          </Link>
-
-          <Link
-            href="https://www.linkedin.com/in/fawad-ahmad-b9a286319"
-            target="_blank"
-          >
-            <Image
-              src="/footer/linkedin.svg"
-              alt="LinkedIn"
-              width={30}
-              height={30}
-              className="cursor-pointer transition duration-300 hover:brightness-0 hover:invert"
-            />
-          </Link>
-
-          <Link href="https://github.com/FAWAD-AHMAD-168" target="_blank">
-            <Image
-              src="/footer/github.svg"
-              alt="GitHub"
-              width={30}
-              height={30}
-              className="cursor-pointer transition duration-300 hover:brightness-0 hover:invert"
-            />
-          </Link>
+          {SocialLinks.map((link) => (
+            <Link key={link.id} href={link.href} target="_blank">
+              <Icon
+                icon={link.icon}
+                width={30}
+                height={30}
+                className=" text-(--text-secondary-color) active:scale-108  active:text-(--text-primary-color) hover:scale-108 hover:text-(--text-primary-color) cursor-pointer transition duration-300  "
+              />
+            </Link>
+          ))}
         </div>
 
         {/* Copyright and date */}

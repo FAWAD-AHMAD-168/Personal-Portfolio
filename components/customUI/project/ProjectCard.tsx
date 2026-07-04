@@ -65,7 +65,7 @@ const ProjectCard = (props: ProjectCardProps) => {
         <CardTitle className=" group  w-[115%]   text-(--text-primary-color) font-semibold text-[18px] ">
           <Link
             href={`/projects/${props.slug}`}
-            className="flex items-center group-hover:text-(--primary-color) transition-all duration-300"
+            className="flex items-center group-hover:text-(--primary-color) active:text-(--primary-color) active:scale-105 transition-all duration-300"
           >
             {props.projectTitle}
             <ExternalLink

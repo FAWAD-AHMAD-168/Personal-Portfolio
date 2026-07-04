@@ -22,6 +22,7 @@ const ProjectHeroRight = ({ project }: ProjectHeroRightProps) => {
         alt={project.title}
         width={450}
         height={400}
+        className="rounded-lg hover:scale-102 cursor-pointer transition duration-300 "
       />
     </motion.div>
   );
