@@ -23,7 +23,7 @@ const Hamburger = () => {
   const containerVariants = {
     hidden: {},
     visible: {
-      transition: { staggerChildren: 0.15, delayChildren: 0.4 },
+      transition: { staggerChildren: 0.1, delayChildren: 0.3 },
     },
   };
   const itemVariants = {
@@ -32,7 +32,7 @@ const Hamburger = () => {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.3,
+        duration: 0.2,
         ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number],
       },
     },
@@ -110,7 +110,7 @@ const Hamburger = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{
               duration: 0.3,
-              delay: 1.2,
+              delay: 0.85,
               ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number],
             }}
           >

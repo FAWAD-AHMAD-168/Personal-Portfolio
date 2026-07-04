@@ -1,5 +1,8 @@
 import SectionHeading from "@/components/customUI/SectionHeading";
 import ProjectFilter from "@/components/customUI/project/ProjectFilter";
+import ProjectsMetaData from "@/seo/projects";
+
+export const metadata = ProjectsMetaData;
 
 const page = () => {
   return (

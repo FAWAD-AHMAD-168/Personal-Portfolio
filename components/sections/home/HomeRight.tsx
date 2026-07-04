@@ -37,9 +37,9 @@ const HomeRight = () => {
       {/* Smaller Image for smaller screens */}
 
       <motion.div
-        initial={{ scale: 0.8, x: 40, opacity: 0 }}
-        animate={{ scale: 1, x: 0, opacity: 1 }}
-        transition={{ duration: 0.7 }}
+        initial={{  x: 40, opacity: 0 }}
+        animate={{  x: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
         className="mt-4 block md:hidden "
       >
         <Image

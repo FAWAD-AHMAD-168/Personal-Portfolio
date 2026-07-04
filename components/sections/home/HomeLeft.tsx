@@ -19,7 +19,7 @@ const HomeLeft = () => {
           <Typewriter
             words={[
               "FULL STACK DEVELOPER",
-              "MOBILE APP DEVELOPER",
+              "FLUTTER DEVELOPER",
               "PROGRAMMER",
             ]}
             loop
