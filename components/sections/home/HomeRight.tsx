@@ -60,7 +60,7 @@ const HomeRight = () => {
         className=" hidden  absolute bottom-10 right-23 text-(--text-primary-color) text-[16px] w-100 h-20  bg-(--bg-projectsCard-color) rounded-sm border font-semibold border-(--text-secondary-color) lg:flex justify-center items-center gap-2"
       >
         <Image src="/home/work.svg" alt="work" width={30} height={30} />
-        <p>Open for new opportunities</p>
+        <p>Open to new opportunities</p>
       </motion.div>
     </section>
   );

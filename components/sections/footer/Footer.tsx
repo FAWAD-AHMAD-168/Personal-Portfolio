@@ -1,5 +1,5 @@
 "use client";
-
+import { useState } from "react"; 
 import { Icon } from "@iconify/react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,6 +9,7 @@ const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+  const [currentYear] = useState(new Date().getFullYear());
   return (
     <section className="w-full">
       <div
@@ -67,7 +68,7 @@ const Footer = () => {
 
           <p>
             <span className=" text-(--text-secondary-color) ">
-              2026 Fawad Ahmad -{" "}
+              {currentYear} Fawad Ahmad -{" "}
             </span>{" "}
             <span className="text-(--text-secondary-color)">
               All rights reserved.{" "}

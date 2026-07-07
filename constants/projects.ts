@@ -12,9 +12,9 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
-    imageSrc: "/projects/yts.svg",
+    imageSrc: "/projects/mern_auth_11.svg",
     projectType: "Web",
-    date: "Aug 2025",
+    date: "Aug 2025 ",
     projectTitle: "MERN Auth System",
     slug: "mern-auth-system",
     projectDescription:

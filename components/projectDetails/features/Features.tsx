@@ -29,7 +29,7 @@ const Features = ({ project }: FeaturesProps) => {
         {project.features.map((feature, index) => (
           <Card
             key={index}
-            className="group w-38 sm:w-52 md:w-65 lg:w-72 xl:w-79 lg:h-48.5 bg-(--bg-secondary-color) border border-(--primary-color) gap-3 py-4 px-2 md:px-4 hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(156,163,175,0.25)] transition-all duration-300 ease-in-out cursor-pointer"
+            className="group w-38 sm:w-52 md:w-69 lg:w-72 xl:w-79 lg:h-48.5 bg-(--bg-secondary-color) border border-(--primary-color) gap-3 py-4 px-2 md:px-4 hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(156,163,175,0.25)] transition-all duration-300 ease-in-out cursor-pointer"
           >
             <div className="w-9.25 h-9.25 sm:w-10.5 sm:h-10.5 md:w-11.25 md:h-11.25 mx-auto flex justify-center items-center rounded-full bg-(--primary-color)">
               <Image

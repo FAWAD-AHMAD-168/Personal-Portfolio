@@ -14,7 +14,7 @@ const ProjectHeroLeft = ({ project }: ProjectHeroLeftProps) => {
         initial={{ opacity: 0, x: -60 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 1.3 }}
-        className="text-(--text-primary-color) text-4xl font-bold  text-center min-[850px]:text-left "
+        className="text-(--text-primary-color) text-2xl  sm:text-4xl font-bold  text-center min-[850px]:text-left "
       >
         {project?.title}
       </motion.h2>
@@ -22,7 +22,7 @@ const ProjectHeroLeft = ({ project }: ProjectHeroLeftProps) => {
         initial={{ opacity: 0, x: -60 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.5, delay: 1.4 }}
-        className="block lg:hidden text-(--text-secondary-color) text-[16px] w-[90%] text-center min-[850px]:text-left "
+        className="block lg:hidden text-(--text-secondary-color) text-[13px] md:text-[16px] w-[90%] text-center min-[850px]:text-left "
       >
         {project?.descriptionForSmallerScreens}
       </motion.p>

@@ -25,13 +25,14 @@ const BackButton = () => {
             animate={{ width: 190, opacity: 1 }}
             exit={{ width: 50, opacity: 0 }}
             transition={{ duration: 0.4 }}
-            className="flex h-[50px] overflow-hidden rounded-full bg-(--text-primary-color) items-center justify-center gap-2 px-4"
+            className="flex h-12.5 overflow-hidden rounded-full bg-(--text-primary-color) items-center justify-center gap-2 px-4"
           >
             <Image
               width={25}
               height={25}
               src="/project_details/arrow-back.svg"
               alt="back-arrow"
+              loading="eager"
             />
 
             <p className="font-medium whitespace-nowrap">Back To Projects</p>
@@ -43,7 +44,7 @@ const BackButton = () => {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="w-[50px] h-[50px] rounded-full flex items-center justify-center bg-(--text-primary-color)"
+            className="w-12.5 h-12.5 rounded-full flex items-center justify-center bg-(--text-primary-color)"
           >
             <Image
               width={25}

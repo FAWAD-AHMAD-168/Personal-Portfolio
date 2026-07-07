@@ -1,4 +1,5 @@
 "use client";
+import {useState} from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
@@ -6,9 +7,11 @@ import { motion } from "framer-motion";
 import SocialLinks from "@/constants/social_links";
 
 const Footer = () => {
+  const [currentYear] = useState(new Date().getFullYear());
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
+
   return (
     <motion.section
       initial={{ opacity: 0 }}
@@ -72,7 +75,7 @@ const Footer = () => {
 
           <p>
             <span className=" text-(--text-secondary-color) ">
-              2026 Fawad Ahmad -{" "}
+              {currentYear} Fawad Ahmad -{" "}
             </span>{" "}
             <span className="text-(--text-secondary-color)">
               All rights reserved.{" "}

@@ -35,16 +35,15 @@ const Showcase = ({ project }: ShowcaseProps) => {
   }, [api]);
 
   return (
-    <motion.section 
-    initial={{ opacity: 0, }}
-    animate={{ opacity: 1 }}
-    transition={{ duration: 0.5, delay: 1.6 }}
-
-    
-    className="flex flex-col items-center gap-6 mt-20">
+    <motion.section
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5, delay: 1.6 }}
+      className="hidden  sm:flex flex-col items-center gap-6 mt-20"
+    >
       <SectionHeading>Visual Showcase</SectionHeading>
 
-      <p className="w-[90%] text-center text-(--text-secondary-color) lg:w-[60%] mt-10 mb-5">
+      <p className=" w-[60%]  sm:w-[90%] text-center text-(--text-secondary-color) lg:w-[60%] mt-10 mb-5">
         A visual walkthrough of the features, workflows, and experiences built
         throughout the project.
       </p>
@@ -63,15 +62,16 @@ const Showcase = ({ project }: ShowcaseProps) => {
             {project.showcaseImages.map((image, index) => (
               <CarouselItem
                 key={index}
-                className="group relative cursor-pointer"
+                className=" group relative cursor-pointer   flex flex-col gap-2 justify-center items-center  "
               >
                 <Image
                   src={image.image}
                   alt={image.description}
                   width={1200}
-                  height={700}
-                  className="  w-full rounded-lg aspect-auto group-hover:opacity-15 transition-all duration-500 ease-in-out"
+                  height={900}
+                  className="hidden sm:block sm:w-[80%]  md:w-full rounded-lg aspect-auto  group-hover:opacity-15   transition-all duration-500 ease-in-out "
                 />
+
                 <div className="absolute inset-0 z-100 flex  group-hover:opacity-100 group-hover:gap-0 flex-col justify-center items-center opacity-0 gap-5  transition-all duration-700 ease-in-out">
                   <h4 className="text-center text-[24px] font-bold text-(--text-primary-color) mb-2">
                     {image.title}

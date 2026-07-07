@@ -93,7 +93,7 @@ const Contact = () => {
           className="w-full p-3 border border-(--text-secondary-color) rounded-sm text-(--text-primary-color) bg-(--bg-secondary-color) placeholder:text-(--text-secondary-color) outline-none focus:border-(--primary-color)"
         />
         {errors.email && (
-          <p className="text-[10px] text-red-500 ">
+          <p className="text-[12px] text-red-500 ">
             {errors.email.message}
           </p>
         )}

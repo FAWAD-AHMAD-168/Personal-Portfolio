@@ -27,7 +27,7 @@ const TechStack = ({ project }: TechStackProps) => {
       <p className="mt-8 text-md  text-(--text-secondary-color) text-center max-w-md  leading-relaxed">
         This project was built using the following tools and technologies.
       </p>
-      <div className="hidden bg-(--bg-secondary-color) rounded-lg grid grid-cols-4  max-[450px]:grid-cols-3 gap-7 mt-15 p-4 lg:grid  ">
+      <div className="hidden bg-(--bg-secondary-color) rounded-lg  lg:grid  grid-cols-4 gap-y-10  max-[450px]:grid-cols-3 gap-7 mt-15 p-4   ">
         {project.techStack.map((tech, index) => (
           <Tooltip key={index}>
             <TooltipTrigger>
@@ -48,7 +48,7 @@ const TechStack = ({ project }: TechStackProps) => {
         ))}
       </div>
 
-      <div className=" bg-(--bg-secondary-color) rounded-lg grid grid-cols-4  max-[450px]:grid-cols-3 gap-7 mt-15 p-4 lg:hidden  ">
+      <div className=" bg-(--bg-secondary-color) rounded-lg grid grid-cols-4   max-[450px]:grid-cols-3 gap-7 mt-15 p-4 lg:hidden  ">
         {project.techStack.map((tech, index) => (
           <div key={index} className="flex flex-col items-center gap-2">
             <Image

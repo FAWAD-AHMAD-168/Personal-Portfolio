@@ -25,15 +25,16 @@ async function Page({ params }: PageProps) {
   }
 
   return (
-    <section className="mx-auto max-w-262.5 flex  ">
-      {/*  header */}
-      <header className="z-1000 fixed top-7 max-[1100px]:left-7  ">
+    <section className="w-full h-screen  flex flex-col ">
+      <header className="mt-10 fixed z-1000 w-full max-w-262.5  left-1/2 -translate-x-1/2   h-16    flex items-center justify-start  px-4">
         <BackButton />
       </header>
 
-      {/* Main content */}
-      <main className="w-[90%] max-w-262.5     absolute top-25 left-1/2 -translate-x-1/2 flex flex-col gap-20 ">
-        <section className="mx-auto p-3  flex  justify-center items-center   max-[850px]:flex-col-reverse  gap-10 ">
+      {/* Main Section Containing Hero, Tech, Features, and Showcase Sections */}
+      <main className="w-full max-w-262.5 mx-auto   flex flex-col justify-center items-center gap-10 mt-30">
+       
+        {/* HERO SECTION  */}
+        <section className="mx-auto p-3  flex  justify-center items-center   max-[1024px]:flex-col-reverse  gap-10 ">
           <ProjectHeroLeft project={project} />
           <ProjectHeroRight project={project} />
         </section>
@@ -42,9 +43,11 @@ async function Page({ params }: PageProps) {
         <Features project={project} />
         <Showcase project={project} />
       </main>
-      <div className="w-full absolute top-[420vh] left-0  flex justify-center items-center -mt-6">
+
+      {/* Footer */}
+     
         <Footer />
-      </div>
+     
     </section>
   );
 }
