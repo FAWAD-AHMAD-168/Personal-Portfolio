@@ -25,7 +25,7 @@ const SkillCard = ({ title, skills }: SkillCardProps) => {
               alt={skill.name}
               width={50}
               height={50}
-              className="object-contain"
+              className="object-contain "
             />
             <span className="text-[12px] text-(--text-secondary-color) font-semibold uppercase">
               {skill.name}

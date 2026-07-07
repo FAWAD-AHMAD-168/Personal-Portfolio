@@ -11,11 +11,12 @@ const HomeRight = () => {
         className="mt-10 hidden  lg:block"
       >
         <Image
-          src="/home/profile pic.svg"
+          src="/home/profile_pic.svg"
           alt="profile"
           width={370}
           height={370}
-          className="rounded-full "
+          className="rounded-full"
+          priority
         />
       </motion.div>
 
@@ -26,28 +27,30 @@ const HomeRight = () => {
         className="mt-4 hidden  md:block lg:hidden "
       >
         <Image
-          src="/home/profile pic.svg"
+          src="/home/profile_pic.svg"
           alt="profile"
           width={250}
           height={250}
-          className="rounded-full"
+          className="rounded-full  "
+          priority
         />
       </motion.div>
 
       {/* Smaller Image for smaller screens */}
 
       <motion.div
-        initial={{  x: 40, opacity: 0 }}
-        animate={{  x: 0, opacity: 1 }}
+        initial={{ x: 40, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 1 }}
         className="mt-4 block md:hidden "
       >
         <Image
-          src="/home/profile pic.svg"
+          src="/home/profile_pic.svg"
           alt="profile"
           width={200}
           height={200}
-          className="rounded-full  "
+          className="rounded-full "
+          priority
         />
       </motion.div>
 

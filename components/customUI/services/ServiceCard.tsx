@@ -12,16 +12,15 @@ const ServiceCard = ({ logo, title, description }: ServiceCardProps) => {
         <h3 className="  text-2xl font-semibold">{title} </h3>
       </div>
 
-      <div className="hidden md:hidden sm:flex gap-2 mx-auto">
+      <div className="hidden md:hidden sm:flex gap-2 mx-auto ">
         <Image src={logo} alt={title} width={20} height={20} />
         <h3 className="  text-xl font-semibold">{title} </h3>
       </div>
 
-      <div className="sm:hidden flex gap-2 mx-auto">
+      <div className="sm:hidden flex gap-2 mx-auto ">
         <Image src={logo} alt={title} width={20} height={20} />
         <h3 className="  text-md font-semibold">{title} </h3>
       </div>
-
 
       <p className="w-[72%]  text-[12px]  sm:text-sm  lg:text-[16px]    text-(--text-secondary-color) mx-auto ">
         {description}
