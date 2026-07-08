@@ -5,6 +5,8 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 
+import { Analytics } from "@vercel/analytics/next";
+
 const poppins = Poppins({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700"],
@@ -30,6 +32,8 @@ export default function RootLayout({
           {children}
           <Toaster richColors position="top-right" offset="20px" />
         </TooltipProvider>
+
+        <Analytics />
       </body>
     </html>
   );
