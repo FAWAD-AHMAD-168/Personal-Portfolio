@@ -1,4 +1,5 @@
-#   Fawad Ahmad | Personal Portfolio
+
+# Fawad Ahmad | Personal Portfolio
 
 <div align="center">
 
@@ -106,109 +107,42 @@ Rather than being a simple portfolio, it demonstrates my approach to building pr
 # 📁 Project Structure
 
 ```text
-PORTFOLIO
-├── .github
-└── portfolio
-    ├── .next
-    ├── app
-    │   ├── about
-    │   ├── contact
-    │   ├── experience
-    │   ├── home
-    │   ├── projects
-    │   ├── skills
-    │   ├── favicon.ico
-    │   ├── globals.css
-    │   ├── layout.tsx
-    │   ├── not-found.tsx
-    │   └── page.tsx
-    ├── components
-    │   ├── customUI
-    │   │   ├── experience
-    │   │   │   └── ExperienceCard.tsx
-    │   │   ├── project
-    │   │   │   ├── ProjectCard.tsx
-    │   │   │   ├── ProjectFilter.tsx
-    │   │   │   └── ProjectLink.tsx
-    │   │   ├── services
-    │   │   │   └── ServiceCard.tsx
-    │   │   └── skills
-    │   │       ├── SkillCard.tsx
-    │   │       ├── BackButton.tsx
-    │   │       ├── Button.tsx
-    │   │       ├── Hamburger.tsx
-    │   │       └── SectionHeading.tsx
-    │   ├── lottiefiles
-    │   │   └── LottieAnimation.tsx
-    │   ├── projectDetails
-    │   │   ├── features
-    │   │   │   └── Features.tsx
-    │   │   ├── footer
-    │   │   │   └── footer.tsx
-    │   │   ├── home
-    │   │   │   ├── ProjectHeroLeft.tsx
-    │   │   │   └── ProjectHeroRight.tsx
-    │   │   ├── showcase
-    │   │   │   └── showcase.tsx
-    │   │   └── tech
-    │   ├── sections
-    │   │   ├── about
-    │   │   │   ├── AboutLeft.tsx
-    │   │   │   ├── AboutRight.tsx
-    │   │   │   └── Services.tsx
-    │   │   ├── contact
-    │   │   │   └── contact.tsx
-    │   │   ├── footer
-    │   │   │   └── Footer.tsx
-    │   │   ├── header
-    │   │   │   └── Header.tsx
-    │   │   └── home
-    │   │       ├── HomeLeft.tsx
-    │   │       └── HomeRight.tsx
-    │   └── ui
-    ├── constants
-    │   ├── backendSkills.ts
-    │   ├── experience.ts
-    │   ├── frontendSkills.ts
-    │   ├── navLinks.ts
-    │   ├── projects.ts
-    │   ├── projectsDetail.ts
-    │   ├── services.ts
-    │   ├── social_links.ts
-    │   └── tools.ts
-    ├── lib
-    │   └── utils.ts
-    ├── node_modules
-    ├── public
-    │   ├── about
-    │   ├── documents
-    │   ├── experience
-    │   ├── features
-    │   ├── footer
-    │   ├── header
-    │   ├── home
-    │   ├── lottie
-    │   ├── project_details
-    │   ├── projects
-    │   ├── services
-    │   ├── skills
-    │   └── send.svg
-    ├── seo
-    │   ├── about.ts
-    │   ├── contact.ts
-    │   ├── home.ts
-    │   └── projects.ts
-    ├── utils
-    ├── .env.local
-    ├── .gitignore
-    ├── components.json
-    ├── eslint.config.mjs
-    ├── next-env.d.ts
-    ├── package-lock.json
-    ├── package.json
-    ├── postcss.config.mjs
-    ├── README.md
-    └── tsconfig.json
+portfolio
+├── app/
+│   ├── about/
+│   ├── contact/
+│   ├── experience/
+│   ├── projects/
+│   ├── skills/
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── customUI/
+│   ├── lottiefiles/
+│   ├── projectDetails/
+│   ├── sections/
+│   └── ui/
+│
+├── constants/
+├── lib/
+├── public/
+│   ├── about/
+│   ├── documents/
+│   ├── experience/
+│   ├── home/
+│   ├── projects/
+│   ├── services/
+│   └── skills/
+│
+├── seo/
+├── utils/
+│
+├── .env.local
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── README.md
 ```
 
 ---
