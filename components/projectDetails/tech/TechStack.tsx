@@ -50,7 +50,7 @@ const TechStack = ({ project }: TechStackProps) => {
 
       <div className=" bg-(--bg-secondary-color) rounded-lg grid grid-cols-4   max-[450px]:grid-cols-3 gap-7 mt-15 p-4 lg:hidden  ">
         {project.techStack.map((tech, index) => (
-          <div key={index} className="flex flex-col items-center gap-2">
+          <div key={index} className="flex flex-col items-center gap-2 cursor-pointer">
             <Image
               key={index}
               src={tech.icon}

@@ -139,49 +139,49 @@ const ProjectDetailsData: ProjectDetails[] = [
     ],
     showcaseImages: [
       {
-        image: "/project_details/yts/home1.jpeg",
+        image: "/project_details/yts/home12.svg",
         title: "Hero Banner and Popular Downloads",
         description:
           "The main landing view showcasing the centralized headline banner text, search bar navigation, and the beginning of the Popular Downloads row.",
       },
       {
-        image: "/project_details/yts/popular1.jpeg",
+        image: "/project_details/yts/popular2.svg",
         title: "Popular Downloads Section",
         description:
           "Displays prominent titles like Kesari Chapter 2, Sikandar, Bhool Chuk Maaf, and Azaad with hover-ready image borders.",
       },
       {
-        image: "/project_details/yts/card_hover.png",
+        image: "/project_details/yts/card_hover1.svg",
         title: "Interactive Movie Card Hover State",
         description:
           "Demonstrates the custom overlay triggered upon hovering over a movie card, displaying the star rating, movie genres, and an interactive details button.",
       },
       {
-        image: "/project_details/yts/warning.jpeg",
+        image: "/project_details/yts/warning1.svg",
         title: "VPN Warning Notice Component",
         description:
           "A warning container alerting users about download security, styled with a distinct green neon border and custom highlight text badges.",
       },
       {
-        image: "/project_details/yts/bollywood.jpeg",
+        image: "/project_details/yts/bollywood1.svg",
         title: "Some Bollywood Hits Torrents Section",
         description:
           "A categorized movie grid featuring popular Indian cinema releases such as Chhichhore, Don 2, and Drishyam 2 equipped with resolution corner tags.",
       },
       {
-        image: "/project_details/yts/marvel.jpeg",
+        image: "/project_details/yts/marvel1.svg",
         title: "Top Marvel Blockbusters Section",
         description:
           "A themed compilation grid styled specifically for cinematic franchises, featuring clean alignment for movie titles and launch years.",
       },
       {
-        image: "/project_details/yts/upcoming.jpeg",
+        image: "/project_details/yts/upcoming1.svg",
         title: "Upcoming YIFY Movies Section",
         description:
           "A showcase row displaying highly anticipated upcoming releases like Final Destination: Bloodlines and Deep Cover.",
       },
       {
-        image: "/project_details/yts/footer.jpeg",
+        image: "/project_details/yts/footer1.svg",
         title: "Structured Footer Layout",
         description:
           "A complete multi-link informational footer replicating the official copyright statements, site links, and user agreement disclaimers.",
@@ -199,7 +199,7 @@ const ProjectDetailsData: ProjectDetails[] = [
       "A production-ready, full-stack authentication ecosystem built with the MERN stack. This system implements end-to-end user security, handling registration validation, token lifecycle orchestration, and self-service account recovery. The backend features rate-limiting defenses, layered route middleware, and secure cookie storage, while the frontend delivers a lightweight, predictive state management layer integrated into a responsive interface.",
     descriptionForSmallerScreens:
       "A production-ready full-stack authentication system built with the MERN stack. Implements email OTP validation, secure HTTP-only JWT cookies, rate-limiting, and profile state management with Redux Toolkit.",
-    projImg: "/projects/mern_auth_12.svg",
+    projImg: "/project_details/mern_auth/homepage1.svg",
     githubRepoLink: "https://github.com/FAWAD-AHMAD-168/MERN-AUTH",
     // livedemolink: "https://mern-auth.netlify.app/",
     duration: "Aug 2025 - Sep 2025",
@@ -258,49 +258,49 @@ const ProjectDetailsData: ProjectDetails[] = [
     ],
     showcaseImages: [
       {
-        image: "/project_details/mern_auth/homepage.jpeg",
+        image: "/project_details/mern_auth/homepage1.svg",
         title: "Minimal Landing Homepage",
         description:
           "A clean, light-themed home overview welcoming visitors with action pathways to create accounts or sign in securely.",
       },
       {
-        image: "/project_details/mern_auth/register.jpeg",
+        image: "/project_details/mern_auth/register1.svg",
         title: "Account Registration Interface",
         description:
           "Structured signup wrapper requesting usernames, emails, and passwords safely coupled with front-facing status hooks.",
       },
       {
-        image: "/project_details/mern_auth/verify-otp.jpeg",
+        image: "/project_details/mern_auth/verify-otp1.svg",
         title: "Secure Verification Checkpoint",
         description:
           "A minimalistic entry card providing single-use token submission fields alongside automated fallback code request tools.",
       },
       {
-        image: "/project_details/mern_auth/login.jpeg",
+        image: "/project_details/mern_auth/login1.svg",
         title: "Credential Authentication Page",
         description:
           "User login gate containing access controls, error-safe fields, and quick-access routes to reset profiles.",
       },
       {
-        image: "/project_details/mern_auth/profile.jpeg",
+        image: "/project_details/mern_auth/profile1.svg",
         title: "Authenticated Profile View",
         description:
           "A restricted profile environment showing individual details alongside successful connection notifications.",
       },
       {
-        image: "/project_details/mern_auth/forgot-password.jpeg",
+        image: "/project_details/mern_auth/forgot-password1.svg",
         title: "Account Recovery Form",
         description:
           "Recovery screen enabling registered users to safely trigger reset validation pipelines via verified emails.",
       },
       {
-        image: "/project_details/mern_auth/change_password.jpeg",
+        image: "/project_details/mern_auth/change_password1.svg",
         title: "Active Security Management",
         description:
           "Inside access screen built for active profile users looking to update passwords directly from within the session.",
       },
       {
-        image: "/project_details/mern_auth/not_found.jpeg",
+        image: "/project_details/mern_auth/404.svg",
         title: "Custom 404 Route Handler",
         description:
           "A clean, branded fallback screen handling navigation exceptions gracefully with simple redirect actions.",

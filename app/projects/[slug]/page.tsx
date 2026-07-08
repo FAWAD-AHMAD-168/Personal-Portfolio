@@ -26,7 +26,7 @@ async function Page({ params }: PageProps) {
 
   return (
     <section className="w-full h-screen  flex flex-col ">
-      <header className="mt-10 fixed z-1000 w-full max-w-262.5  left-1/2 -translate-x-1/2   h-16    flex items-center justify-start  px-4">
+      <header className="mt-3 sm:mt-10 fixed z-1000 w-full max-w-262.5  left-1/2 -translate-x-1/2   h-16    flex items-center justify-start  px-4">
         <BackButton />
       </header>
 
@@ -34,7 +34,7 @@ async function Page({ params }: PageProps) {
       <main className="w-full max-w-262.5 mx-auto   flex flex-col justify-center items-center gap-10 mt-30">
        
         {/* HERO SECTION  */}
-        <section className="mx-auto p-3  flex  justify-center items-center   max-[1024px]:flex-col-reverse  gap-10 ">
+        <section className="mx-auto p-3  flex  justify-center items-center   max-[1024px]:flex-col-reverse  gap-6 lg:gap-10   ">
           <ProjectHeroLeft project={project} />
           <ProjectHeroRight project={project} />
         </section>
