@@ -6,21 +6,21 @@ import { Typewriter } from "react-simple-typewriter";
 
 const HomeLeft = () => {
   return (
-    <section className="  w-[93%] sm:w-[85%]  lg:w-[50%]  h-85 md:h-95 lg:h-130  flex flex-col justify-center    gap-6 ">
+    <section className="  w-[93%] sm:w-[85%]  lg:w-[50%]  h-90 md:h-95 lg:h-130  flex flex-col justify-center    gap-6 ">
       <motion.div
         initial={{ x: -30, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5 }}
-        className="  flex flex-col gap-2  text-(--text-primary-color) text-3xl text-center lg:text-left md:text-4xl font-semibold"
+        className=" mt-14 min-[400px]:mt-0  flex flex-col gap-2  text-(--text-primary-color) text-3xl text-center lg:text-left md:text-4xl font-semibold"
       >
         <h1>HI THERE,I AM A</h1>
         {/* <h1 className="bg-linear-to-r from-(--primary-color) via-(--secondary-color) to-(--accent-color) text-transparent bg-clip-text"> */}
-        <h1 className=" text-[#0EA5E9] bg-clip-text">
+        <h1 className=" text-[#0EA5E9] ">
           <Typewriter
             words={[
               "FULL STACK DEVELOPER",
-              "FLUTTER DEVELOPER",
-              "PROGRAMMER",
+              // "FLUTTER DEVELOPER",
+              // "PROGRAMMER",
             ]}
             loop
             cursor
@@ -47,7 +47,7 @@ const HomeLeft = () => {
         initial={{ x: -30, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.4 }}
-        className="flex gap-4 mt-4  justify-center lg:justify-start items-center"
+        className="flex flex-col min-[400px]:flex-row gap-4 mt-4 mb-10 min-[400px]:mb-10 justify-center lg:justify-start items-center"
       >
         <Button
           type="button"

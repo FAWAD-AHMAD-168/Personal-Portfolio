@@ -31,25 +31,10 @@ const Header = () => {
             loading="lazy"
             width={120}
             height={120}
-            className="
-    h-10 w-10
-    sm:h-13 sm:w-13
-    md:h-14 md:w-14
-    lg:h-16 lg:w-16
-    rounded-full
-    shadow-(--primary-color) 
-  "
+            className=" h-10 w-10 sm:h-13 sm:w-13 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full shadow-(--primary-color) "
           />
           <h1
-            className="
-    block
-    min-[851px]:max-[897px]:hidden
-    text-[16px]
-    lg:text-[18px]
-    xl:text-[24px]
-    text-(--text-primary-color)
-    font-semibold
-  "
+            className="block min-[851px]:max-[897px]:hidden text-[16px] lg:text-[18px] xl:text-[24px] text-(--text-primary-color) font-semibold "
           >
             Fawad{" "}
             <span className="bg-(--primary-color) bg-clip-text text-transparent">
@@ -85,45 +70,51 @@ const Header = () => {
 
       {/* Medium screens  */}
       <div className="hidden min-[851px]:block lg:hidden">
-        <Button
-          variant="primary"
-          size="sm"
-          type="button"
-          onClick={() => window.open("/resume.pdf", "_blank")}
+        <a
+          href="/documents/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Check Resume
-        </Button>
+          <Button variant="primary" size="sm" type="button">
+            Check Resume
+          </Button>
+        </a>
       </div>
 
       {/* Large screens  */}
       <div className="hidden lg:block xl:hidden">
-        <Button
-          variant="primary"
-          size="md"
-          type="button"
-          onClick={() => window.open("/resume.pdf", "_blank")}
+        <a
+          href="/documents/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Check Resume
-        </Button>
+          <Button variant="primary" size="md" type="button">
+            Check Resume
+          </Button>
+        </a>
       </div>
 
       {/* Extra large  */}
       <div className="hidden xl:block">
-        <Button
-          variant="primary"
-          size="lg"
-          type="button"
-          onClick={() => window.open("/resume.pdf", "_blank")}
+        <a
+          href="/documents/resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Check Resume
-        </Button>
-      </div>
-
-      <div className="block min-[851px]:hidden">
-        <Hamburger />
+          <Button
+            variant="primary"
+            size="lg"
+            type="button"
+          >
+            Check Resume
+          </Button>
+        </a>
       </div>
 
       {/* Hamburger Menu */}
+      <div className="block min-[851px]:hidden">
+        <Hamburger />
+      </div>
     </header>
   );
 };

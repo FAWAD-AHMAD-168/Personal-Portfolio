@@ -69,13 +69,11 @@ const Hamburger = () => {
             p-20
             w-screen
             h-screen
-            
             bg-slate-900/90
             backdrop-blur-xl
             flex
             flex-col
             items-center
-            
             gap-6
             z-1000"
         >
@@ -121,7 +119,7 @@ const Hamburger = () => {
               onClick={() => setMenuOpen(false)}
             >
               <Link
-                href="/resume.pdf"
+                href="/documents/resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
               >
