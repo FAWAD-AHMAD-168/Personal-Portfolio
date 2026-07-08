@@ -19,8 +19,8 @@ const HomeLeft = () => {
           <Typewriter
             words={[
               "FULL STACK DEVELOPER",
-              // "FLUTTER DEVELOPER",
-              // "PROGRAMMER",
+              "FLUTTER DEVELOPER",
+              "PROGRAMMER",
             ]}
             loop
             cursor
