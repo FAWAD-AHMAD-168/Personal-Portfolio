@@ -5,7 +5,7 @@
 
 [![Live Demo](https://img.shields.io/badge/🌐_Live_Demo-Visit_Portfolio-0F172A?style=for-the-badge)](https://fawad-ahmad-168-portfolio.vercel.app/)
 [![Next.js](https://img.shields.io/badge/Next.js-16-black?style=for-the-badge\&logo=next.js)](https://nextjs.org/)
-[![React](https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge\&logo=react)](https://react.dev/)
+
 [![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge\&logo=typescript)](https://www.typescriptlang.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-v4-06B6D4?style=for-the-badge\&logo=tailwind-css)](https://tailwindcss.com/)
 [![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
@@ -73,10 +73,10 @@ Rather than being a simple portfolio, it demonstrates my approach to building pr
 
 ## Frontend
 
-* Next.js 16
-* React 19
+* Next.js
+* React 
 * TypeScript
-* Tailwind CSS v4
+* Tailwind CSS
 * Framer Motion
 
 ## UI Libraries
@@ -216,17 +216,71 @@ Runs the production server.
 
 # 📸 Screenshots
 
-> Add screenshots here.
+>## 📸 Screenshots
 
-Suggested screenshots:
+<p align="center">
+  <img src="./screenshots/home.jpeg" alt="Home Page" width="90%">
+</p>
 
-* Home Page
-* About Section
-* Skills Section
-* Experience Section
-* Projects Section
-* Project Details Page
-* Contact Section
+<p align="center"><strong>Home Page</strong></p>
+
+<br>
+<table>
+  <tr>
+    <td align="center" width="50%">
+      <img src="./screenshots/about1.jpeg" alt="About Me Section" width="100%"><br>
+      <strong>👨‍💻 About Me</strong>
+    </td>
+    <td align="center" width="50%">
+      <img src="./screenshots/about2.jpeg" alt="Services Section" width="100%"><br>
+      <strong>🛠️ What I Can Do For You?</strong>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="./screenshots/skills1.jpeg" alt="Frontend Skills" width="100%"><br>
+      <strong>⚙️ Frontend Skills</strong>
+    </td>
+    <td align="center">
+      <img src="./screenshots/skills2.jpeg" alt="Backend Skills and Tools" width="100%"><br>
+      <strong>🧰 Backend Skills & Tools</strong>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="./screenshots/experience.jpeg" alt="Professional Experience Section" width="100%"><br>
+      <strong>💼 Experience</strong>
+    </td>
+    <td align="center">
+      <img src="./screenshots/404.jpeg" alt="Professional Experience Section" width="100%"><br>
+      <strong> 404 - Not Found Page</strong>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="./screenshots/project1.jpeg" alt="Projects Section" width="100%"><br>
+      <strong>🚀 Projects</strong>
+    </td>
+    <td align="center">
+      <img src="./screenshots/project2.jpeg" alt="Project Details Page" width="100%"><br>
+      <strong>📄 Project Details</strong>
+    </td>
+  </tr>
+
+  <tr>
+    <td align="center">
+      <img src="./screenshots/contact.jpeg" alt="Contact Section" width="100%"><br>
+      <strong>📬 Contact</strong>
+    </td>
+    <td align="center">
+      <img src="./screenshots/footer.jpeg" alt="Website Footer" width="100%"><br>
+      <strong>🔗 Footer</strong>
+    </td>
+  </tr>
+</table>
 
 ---
 
