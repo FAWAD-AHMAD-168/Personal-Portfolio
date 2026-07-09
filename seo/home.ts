@@ -24,7 +24,7 @@ const metadata: Metadata = {
     title: "Fawad Ahmad | Full Stack Developer",
     description:
       "Portfolio of Fawad Ahmad, a Full Stack Developer focused on building fast, modern, and scalable web applications.",
-    url: "https://yourdomain.com/home",
+    url: "https://fawad-ahmad-168-portfolio.vercel.app/home",
     type: "website",
   },
 };

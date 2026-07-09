@@ -22,7 +22,7 @@ const metadata: Metadata = {
     title: "About Me | Fawad Ahmad – Full Stack Developer",
     description:
       "About Fawad Ahmad, a Computer Science undergraduate and Full Stack Developer specializing in modern web development.",
-    url: "https://yourdomain.com/about",
+    url: "https://fawad-ahmad-168-portfolio.vercel.app/about",
     type: "website",
   },
 };

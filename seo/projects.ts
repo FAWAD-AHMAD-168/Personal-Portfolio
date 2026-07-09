@@ -28,7 +28,7 @@ const projectsMetadata: Metadata = {
     description:
       "Discover projects built by Fawad Ahmad, showcasing creativity, problem-solving, and modern web development skills.",
 
-    url: "https://yourdomain.com/projects", // Replace after deployment
+    url: "https://fawad-ahmad-168-portfolio.vercel.app/projects", 
     siteName: "Fawad Ahmad Portfolio",
     type: "website",
   },

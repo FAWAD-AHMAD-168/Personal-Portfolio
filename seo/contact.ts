@@ -18,7 +18,7 @@ import type { Metadata } from "next";
     title: "Contact | Fawad Ahmad",
     description:
       "Reach out to Fawad Ahmad for collaborations, freelance work, or project discussions.",
-    url: "https://yourdomain.com/contact", 
+    url: "https://fawad-ahmad-168-portfolio.vercel.app/contact", 
     siteName: "Fawad Ahmad Portfolio",
     type: "website",
   },
