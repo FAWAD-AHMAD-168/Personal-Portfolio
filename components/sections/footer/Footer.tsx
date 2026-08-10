@@ -67,10 +67,10 @@ const Footer = () => {
           />
 
           <p>
-            <span className=" text-(--text-secondary-color) ">
+            <span className=" text-(--text-secondary-color) min-[300px]:max-[347px]:text-[14px] ">
               {currentYear} Fawad Ahmad -{" "}
             </span>{" "}
-            <span className="text-(--text-secondary-color)">
+            <span className="text-(--text-secondary-color) min-[300px]:max-[347px]:text-[14px]">
               All rights reserved.{" "}
             </span>
           </p>

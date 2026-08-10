@@ -12,6 +12,25 @@ interface Project {
 const projectsData: Project[] = [
   {
     id: 1,
+
+    imageSrc: "/projects/everywear-main.svg",
+
+    projectType: "Web",
+
+    date: "Aug 2026",
+
+    projectTitle: "EveryWear",
+
+    slug: "everywear",
+
+    projectDescription:
+      "Scalable e-commerce backend with secure authentication, product management, shopping cart, order processing, reviews, image uploads, and admin workflows.",
+    techStack: ["NodeJS", "ExpressJS", "MongoDB", "Mongoose", "JWT", "Cloudinary", "Multer", "Resend"],
+
+    githubLink: "https://github.com/FAWAD-AHMAD-168/Everywear",
+  },
+  {
+    id: 2,
     imageSrc: "/projects/mern_auth_11.svg",
     projectType: "Web",
     date: "Aug 2025 ",
@@ -23,7 +42,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FAWAD-AHMAD-168/MERN-AUTH",
   },
   {
-    id: 2,
+    id: 3,
     imageSrc: "/projects/yts1.svg",
     projectType: "Web",
     date: "June 2025",
@@ -35,7 +54,7 @@ const projectsData: Project[] = [
     githubLink: "https://github.com/FAWAD-AHMAD-168/YTS-YIFY-Movies-Clone",
   },
   {
-    id: 3,
+    id: 4,
     imageSrc: "/projects/learnify.svg",
     projectType: "Web",
     date: "Mar 2025",
@@ -46,10 +65,6 @@ const projectsData: Project[] = [
     techStack: ["HTML", "CSS"],
     githubLink: "https://github.com/FAWAD-AHMAD-168/Learnify",
   },
-  
-  
 ];
-
-
 
 export default projectsData;

@@ -21,7 +21,7 @@ const BackButton = () => {
         {show ? (
           <motion.div
             key="expanded"
-            initial={{ width: 50, opacity: 0.6 }}
+            initial={{ width: 50, opacity: 1 }}
             animate={{ width: 190, opacity: 1 }}
             exit={{ width: 50, opacity: 0 }}
             transition={{ duration: 0.4 }}
@@ -42,7 +42,7 @@ const BackButton = () => {
             key="circle"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            // exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             className="w-12.5 h-12.5 rounded-full flex items-center justify-center bg-(--text-primary-color)"
           >
@@ -60,3 +60,6 @@ const BackButton = () => {
 };
 
 export default BackButton;
+
+
+

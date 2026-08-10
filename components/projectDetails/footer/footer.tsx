@@ -57,7 +57,7 @@ const Footer = () => {
                 icon={link.icon}
                 width={30}
                 height={30}
-                className=" text-(--text-secondary-color) active:scale-108  active:text-(--text-primary-color) hover:scale-108 hover:text-(--text-primary-color) cursor-pointer transition duration-300  "
+                className=" text-(--text-secondary-color) active:scale-108  active:text-(--text-primary-color) hover:scale-110 hover:text-(--text-primary-color) cursor-pointer transition duration-300  "
               />
             </Link>
           ))}
@@ -65,7 +65,7 @@ const Footer = () => {
 
         {/* Copyright and date */}
 
-        <div className="mt-4 flex gap-1 justify-center items-center">
+        <div className="mt-6 flex gap-1 justify-center items-center">
           <Image
             src="/footer/copyright.svg"
             alt="Logo"

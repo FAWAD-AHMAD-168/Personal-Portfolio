@@ -17,9 +17,9 @@ const Header = () => {
 
   return (
     <header
-      className=" fixed z-1000 text-(--text-primary-color) bg-slate-900/80 rounded-lg   backdrop-blur-md 
+      className=" fixed z-1000 text-(--text-primary-color) bg-slate-900/80    backdrop-blur-md 
     h-23 w-full mx-auto flex  items-center justify-between  min-[851px]:justify-center  gap-10    
-       sm:gap-32 md:gap-14 lg:gap-22  xl-gap-30   "
+       sm:gap-32 md:gap-14 lg:gap-22  xl-gap-30    "
     >
       {/* Profile Section */}
 
@@ -29,23 +29,16 @@ const Header = () => {
             alt="profile"
             src="/header/profile.png"
             loading="lazy"
-            width={120}
-            height={120}
-            className=" h-10 w-10 sm:h-13 sm:w-13 md:h-14 md:w-14 lg:h-16 lg:w-16 rounded-full shadow-(--primary-color) "
+            width={100}
+            height={100}
+            className=" h-10 w-10 sm:h-13 sm:w-13 md:h-13 md:w-13 rounded-full shadow-(--primary-color) "
           />
-          <h1
-            className="block min-[851px]:max-[897px]:hidden text-[16px] lg:text-[18px] xl:text-[24px] text-(--text-primary-color) font-semibold "
-          >
-            Fawad{" "}
-            <span className="bg-(--primary-color) bg-clip-text text-transparent">
-              Ahmad
-            </span>
+          <h1 className="block min-[851px]:max-[897px]:hidden text-[16px] lg:text-[18px] xl:text-[22px] text-(--text-primary-color) font-semibold ">
+            Fawad <span className="bg-(--primary-color) bg-clip-text text-transparent">Ahmad</span>
           </h1>
 
           <h1 className="hidden min-[851px]:max-[897px]:block">
-            <span className="font-semibold bg-(--primary-color) bg-clip-text text-transparent">
-              Fawad.
-            </span>
+            <span className="font-semibold bg-(--primary-color) bg-clip-text text-transparent">Fawad.</span>
           </h1>
         </Link>
       </div>
@@ -70,11 +63,7 @@ const Header = () => {
 
       {/* Medium screens  */}
       <div className="hidden min-[851px]:block lg:hidden">
-        <a
-          href="/documents/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer">
           <Button variant="primary" size="sm" type="button">
             Check Resume
           </Button>
@@ -83,11 +72,7 @@ const Header = () => {
 
       {/* Large screens  */}
       <div className="hidden lg:block xl:hidden">
-        <a
-          href="/documents/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <a href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer">
           <Button variant="primary" size="md" type="button">
             Check Resume
           </Button>
@@ -96,16 +81,8 @@ const Header = () => {
 
       {/* Extra large  */}
       <div className="hidden xl:block">
-        <a
-          href="/documents/resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button
-            variant="primary"
-            size="lg"
-            type="button"
-          >
+        <a href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer">
+          <Button variant="primary" size="lg" type="button">
             Check Resume
           </Button>
         </a>

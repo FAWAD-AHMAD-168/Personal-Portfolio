@@ -48,12 +48,7 @@ const Hamburger = () => {
         className="h-12.5 w-12.5 rounded-sm"
         onClick={() => setMenuOpen(!menuopen)}
       >
-        <Image
-          src={menuopen ? "/header/cancel.svg" : "/header/hamburger.svg"}
-          alt="Menu"
-          width={24}
-          height={24}
-        />
+        <Image src={menuopen ? "/header/cancel.svg" : "/header/hamburger.svg"} alt="Menu" width={24} height={24} />
       </Button>
 
       {/* Menu Overlay */}
@@ -63,19 +58,7 @@ const Hamburger = () => {
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.9 }}
           transition={{ duration: 0.4 }}
-          className="fixed
-            top-20
-            left-0
-            p-20
-            w-screen
-            h-screen
-            bg-slate-900/90
-            backdrop-blur-xl
-            flex
-            flex-col
-            items-center
-            gap-6
-            z-1000"
+          className="fixed top-20 left-0 p-20 w-screen h-screen bg-slate-900/98 flex flex-col items-center gap-6 z-1000"
         >
           {/* Menu Links */}
           <motion.ul
@@ -85,11 +68,7 @@ const Hamburger = () => {
             className="flex flex-col gap-6 text-[20px]   text-center"
           >
             {navLinks.map((link) => (
-              <motion.li
-                key={link.name}
-                className="  active:scale-90 "
-                variants={itemVariants}
-              >
+              <motion.li key={link.name} className="  active:scale-90 " variants={itemVariants}>
                 <button
                   type="button"
                   onClick={() => {
@@ -112,17 +91,8 @@ const Hamburger = () => {
               ease: [0.25, 0.1, 0.25, 1] as [number, number, number, number],
             }}
           >
-            <Button
-              type="button"
-              variant="primary"
-              size="lg"
-              onClick={() => setMenuOpen(false)}
-            >
-              <Link
-                href="/documents/resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+            <Button type="button" variant="primary" size="lg" onClick={() => setMenuOpen(false)}>
+              <Link href="/documents/resume.pdf" target="_blank" rel="noopener noreferrer">
                 Check Resume
               </Link>
             </Button>
